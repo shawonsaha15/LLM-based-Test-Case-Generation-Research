@@ -1,0 +1,292 @@
+========================================================================
+  STATISTICAL ANALYSIS REPORT
+  Impact of Prompt Engineering on LLM-based Test Case Generation
+========================================================================
+
+────────────────────────────────────────────────────────────────────────
+SECTION 1 — DESCRIPTIVE STATISTICS (per model × strategy × metric)
+────────────────────────────────────────────────────────────────────────
+Values are per-function scores (10 functions each, 6 for Kimi-K2 CoT).
+Boolean metrics (Executability, Pass Rate, Mutation Score) are 0 or 1.
+
+  Model: openai-gpt-oss-120b
+  Strategy       Metric                  Mean     Std   Median     Min     Max
+  -------------- -------------------- ------- ------- -------- ------- -------
+  Zero-Shot      Executability          1.000   0.000    1.000   1.000   1.000
+  Zero-Shot      Pass Rate              0.500   0.527    0.500   0.000   1.000
+  Zero-Shot      Mutation Score         0.800   0.422    1.000   0.000   1.000
+  Zero-Shot      Line Coverage         96.070  11.809  100.000  62.500 100.000
+  Zero-Shot      Branch Coverage       92.222  23.636  100.000  25.000 100.000
+  Few-Shot       Executability          1.000   0.000    1.000   1.000   1.000
+  Few-Shot       Pass Rate              0.500   0.527    0.500   0.000   1.000
+  Few-Shot       Mutation Score         0.700   0.483    1.000   0.000   1.000
+  Few-Shot       Line Coverage         92.917  14.965  100.000  62.500 100.000
+  Few-Shot       Branch Coverage       89.167  24.860  100.000  25.000 100.000
+  Structured     Executability          1.000   0.000    1.000   1.000   1.000
+  Structured     Pass Rate              0.400   0.516    0.000   0.000   1.000
+  Structured     Mutation Score         0.800   0.422    1.000   0.000   1.000
+  Structured     Line Coverage         90.417  15.472  100.000  66.670 100.000
+  Structured     Branch Coverage       88.334  19.324  100.000  50.000 100.000
+  CoT            Executability          1.000   0.000    1.000   1.000   1.000
+  CoT            Pass Rate              0.300   0.483    0.000   0.000   1.000
+  CoT            Mutation Score         0.800   0.422    1.000   0.000   1.000
+  CoT            Line Coverage         97.083   9.224  100.000  70.830 100.000
+  CoT            Branch Coverage       95.000  15.811  100.000  50.000 100.000
+
+  Model: llama-3.3-70b-versatile
+  Strategy       Metric                  Mean     Std   Median     Min     Max
+  -------------- -------------------- ------- ------- -------- ------- -------
+  Zero-Shot      Executability          0.000   0.000    0.000   0.000   0.000
+  Zero-Shot      Pass Rate              0.000   0.000    0.000   0.000   0.000
+  Zero-Shot      Mutation Score         0.000   0.000    0.000   0.000   0.000
+  Zero-Shot      Line Coverage          0.000   0.000    0.000   0.000   0.000
+  Zero-Shot      Branch Coverage        0.000   0.000    0.000   0.000   0.000
+  Few-Shot       Executability          0.000   0.000    0.000   0.000   0.000
+  Few-Shot       Pass Rate              0.000   0.000    0.000   0.000   0.000
+  Few-Shot       Mutation Score         0.000   0.000    0.000   0.000   0.000
+  Few-Shot       Line Coverage          0.000   0.000    0.000   0.000   0.000
+  Few-Shot       Branch Coverage        0.000   0.000    0.000   0.000   0.000
+  Structured     Executability          0.300   0.483    0.000   0.000   1.000
+  Structured     Pass Rate              0.100   0.316    0.000   0.000   1.000
+  Structured     Mutation Score         0.400   0.516    0.000   0.000   1.000
+  Structured     Line Coverage         23.837  41.280    1.335   0.000 100.000
+  Structured     Branch Coverage       23.056  41.657    0.000   0.000 100.000
+  CoT            Executability          0.900   0.316    1.000   0.000   1.000
+  CoT            Pass Rate              0.100   0.316    0.000   0.000   1.000
+  CoT            Mutation Score         0.800   0.422    1.000   0.000   1.000
+  CoT            Line Coverage         84.167  26.773  100.000  33.330 100.000
+  CoT            Branch Coverage       81.667  31.865  100.000  16.670 100.000
+
+  Model: moonshotai-kimi-k2-instruct-0905
+  Strategy       Metric                  Mean     Std   Median     Min     Max
+  -------------- -------------------- ------- ------- -------- ------- -------
+  Zero-Shot      Executability          1.000   0.000    1.000   1.000   1.000
+  Zero-Shot      Pass Rate              0.500   0.527    0.500   0.000   1.000
+  Zero-Shot      Mutation Score         0.800   0.422    1.000   0.000   1.000
+  Zero-Shot      Line Coverage         96.250  11.859  100.000  62.500 100.000
+  Zero-Shot      Branch Coverage       92.500  23.717  100.000  25.000 100.000
+  Few-Shot       Executability          0.000   0.000    0.000   0.000   0.000
+  Few-Shot       Pass Rate              0.000   0.000    0.000   0.000   0.000
+  Few-Shot       Mutation Score         0.000   0.000    0.000   0.000   0.000
+  Few-Shot       Line Coverage          2.083   6.587    0.000   0.000  20.830
+  Few-Shot       Branch Coverage        0.833   2.634    0.000   0.000   8.330
+  Structured     Executability          0.900   0.316    1.000   0.000   1.000
+  Structured     Pass Rate              0.300   0.483    0.000   0.000   1.000
+  Structured     Mutation Score         0.800   0.422    1.000   0.000   1.000
+  Structured     Line Coverage         89.583  23.012  100.000  33.330 100.000
+  Structured     Branch Coverage       85.833  29.931  100.000  25.000 100.000
+  CoT            Executability          0.833   0.408    1.000   0.000   1.000
+  CoT            Pass Rate              0.000   0.000    0.000   0.000   0.000
+  CoT            Mutation Score         0.667   0.516    1.000   0.000   1.000
+  CoT            Line Coverage         77.083  40.633  100.000   0.000 100.000
+  CoT            Branch Coverage       70.833  45.871  100.000   0.000 100.000
+
+────────────────────────────────────────────────────────────────────────
+SECTION 2 — FRIEDMAN TEST (Is there a significant strategy effect?)
+────────────────────────────────────────────────────────────────────────
+H0: All four prompting strategies produce equivalent results.
+Non-parametric equivalent of repeated-measures ANOVA.
+Applied to the two models with complete 10-function data.
+Significance: * p<0.05  ** p<0.01  *** p<0.001  ns = not significant
+
+  Model: llama-3.3-70b-versatile
+  Metric                   χ² statistic    p-value   Sig Interpretation
+  ---------------------- -------------- ---------- ----- ------------------------------
+  Executability                 21.6000     0.0001   ***  Significant strategy effect
+  Pass Rate                      2.0000     0.5724    ns  No significant difference
+  Mutation Score                17.6000     0.0005   ***  Significant strategy effect
+  Line Coverage                 25.4384     0.0000   ***  Significant strategy effect
+  Branch Coverage               25.2090     0.0000   ***  Significant strategy effect
+
+  Model: openai-gpt-oss-120b
+  Metric                   χ² statistic    p-value   Sig Interpretation
+  ---------------------- -------------- ---------- ----- ------------------------------
+  Executability                     nan        nan    ns  No significant difference
+  Pass Rate                      1.4348     0.6974    ns  No significant difference
+  Mutation Score                 3.0000     0.3916    ns  No significant difference
+  Line Coverage                  2.5862     0.4599    ns  No significant difference
+  Branch Coverage                2.5862     0.4599    ns  No significant difference
+
+────────────────────────────────────────────────────────────────────────
+SECTION 3 — PAIRWISE COMPARISONS (Wilcoxon + Bonferroni + Cliff's δ)
+────────────────────────────────────────────────────────────────────────
+6 pairs per metric per model. Bonferroni correction applied (×6).
+Effect size: negligible <0.147 | small <0.33 | medium <0.474 | large ≥0.474
+
+  Model: llama-3.3-70b-versatile
+  Metric: Executability
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot             N/A    1.0000     1.0000    ns   0.0000 negligible
+  Zero-Shot vs Structured          0.00    0.2500     1.0000    ns  -0.3000 small
+  Zero-Shot vs CoT                 0.00    0.0039     0.0234     *  -0.9000 large
+  Few-Shot vs Structured           0.00    0.2500     1.0000    ns  -0.3000 small
+  Few-Shot vs CoT                  0.00    0.0039     0.0234     *  -0.9000 large
+  Structured vs CoT                0.00    0.0312     0.1875    ns  -0.6000 large
+
+  Metric: Pass Rate
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot             N/A    1.0000     1.0000    ns   0.0000 negligible
+  Zero-Shot vs Structured          0.00    1.0000     1.0000    ns  -0.1000 negligible
+  Zero-Shot vs CoT                 0.00    1.0000     1.0000    ns  -0.1000 negligible
+  Few-Shot vs Structured           0.00    1.0000     1.0000    ns  -0.1000 negligible
+  Few-Shot vs CoT                  0.00    1.0000     1.0000    ns  -0.1000 negligible
+  Structured vs CoT                1.50    1.0000     1.0000    ns   0.0000 negligible
+
+  Metric: Mutation Score
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot             N/A    1.0000     1.0000    ns   0.0000 negligible
+  Zero-Shot vs Structured          0.00    0.1250     0.7500    ns  -0.4000 medium
+  Zero-Shot vs CoT                 0.00    0.0078     0.0469     *  -0.8000 large
+  Few-Shot vs Structured           0.00    0.1250     0.7500    ns  -0.4000 medium
+  Few-Shot vs CoT                  0.00    0.0078     0.0469     *  -0.8000 large
+  Structured vs CoT                3.50    0.2188     1.0000    ns  -0.4000 medium
+
+  Metric: Line Coverage
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot             N/A    1.0000     1.0000    ns   0.0000 negligible
+  Zero-Shot vs Structured          0.00    0.0625     0.3750    ns  -0.5000 large
+  Zero-Shot vs CoT                 0.00    0.0020     0.0117     *  -1.0000 large
+  Few-Shot vs Structured           0.00    0.0625     0.3750    ns  -0.5000 large
+  Few-Shot vs CoT                  0.00    0.0020     0.0117     *  -1.0000 large
+  Structured vs CoT                0.00    0.0078     0.0469     *  -0.7400 large
+
+  Metric: Branch Coverage
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot             N/A    1.0000     1.0000    ns   0.0000 negligible
+  Zero-Shot vs Structured          0.00    0.2500     1.0000    ns  -0.3000 small
+  Zero-Shot vs CoT                 0.00    0.0020     0.0117     *  -1.0000 large
+  Few-Shot vs Structured           0.00    0.2500     1.0000    ns  -0.3000 small
+  Few-Shot vs CoT                  0.00    0.0020     0.0117     *  -1.0000 large
+  Structured vs CoT                0.00    0.0078     0.0469     *  -0.7200 large
+
+  Model: openai-gpt-oss-120b
+  Metric: Executability
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot             N/A    1.0000     1.0000    ns   0.0000 negligible
+  Zero-Shot vs Structured           N/A    1.0000     1.0000    ns   0.0000 negligible
+  Zero-Shot vs CoT                  N/A    1.0000     1.0000    ns   0.0000 negligible
+  Few-Shot vs Structured            N/A    1.0000     1.0000    ns   0.0000 negligible
+  Few-Shot vs CoT                   N/A    1.0000     1.0000    ns   0.0000 negligible
+  Structured vs CoT                 N/A    1.0000     1.0000    ns   0.0000 negligible
+
+  Metric: Pass Rate
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot            5.00    1.0000     1.0000    ns   0.0000 negligible
+  Zero-Shot vs Structured          2.00    1.0000     1.0000    ns   0.1000 negligible
+  Zero-Shot vs CoT                 0.00    0.5000     1.0000    ns   0.2000 small
+  Few-Shot vs Structured           6.00    1.0000     1.0000    ns   0.1000 negligible
+  Few-Shot vs CoT                  7.00    0.6875     1.0000    ns   0.2000 small
+  Structured vs CoT                2.00    1.0000     1.0000    ns   0.1000 negligible
+
+  Metric: Mutation Score
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot            0.00    1.0000     1.0000    ns   0.1000 negligible
+  Zero-Shot vs Structured           N/A    1.0000     1.0000    ns   0.0000 negligible
+  Zero-Shot vs CoT                  N/A    1.0000     1.0000    ns   0.0000 negligible
+  Few-Shot vs Structured           0.00    1.0000     1.0000    ns  -0.1000 negligible
+  Few-Shot vs CoT                  0.00    1.0000     1.0000    ns  -0.1000 negligible
+  Structured vs CoT                 N/A    1.0000     1.0000    ns   0.0000 negligible
+
+  Metric: Line Coverage
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot            1.00    1.0000     1.0000    ns   0.0100 negligible
+  Zero-Shot vs Structured          1.00    0.5000     1.0000    ns   0.1000 negligible
+  Zero-Shot vs CoT                 0.00    0.5000     1.0000    ns  -0.1000 negligible
+  Few-Shot vs Structured           4.00    1.0000     1.0000    ns   0.0600 negligible
+  Few-Shot vs CoT                  0.00    0.5000     1.0000    ns  -0.1200 negligible
+  Structured vs CoT                0.00    0.5000     1.0000    ns  -0.2200 small
+
+  Metric: Branch Coverage
+  Pair                           W stat   p (raw)   p (corr)   Sig        δ Effect
+  ---------------------------- -------- --------- ---------- ----- -------- ------------
+  Zero-Shot vs Few-Shot            1.00    1.0000     1.0000    ns   0.0100 negligible
+  Zero-Shot vs Structured          1.00    0.5000     1.0000    ns   0.1000 negligible
+  Zero-Shot vs CoT                 0.00    0.5000     1.0000    ns  -0.1000 negligible
+  Few-Shot vs Structured           4.00    1.0000     1.0000    ns   0.0800 negligible
+  Few-Shot vs CoT                  0.00    0.5000     1.0000    ns  -0.1000 negligible
+  Structured vs CoT                0.00    0.5000     1.0000    ns  -0.1800 small
+
+────────────────────────────────────────────────────────────────────────
+SECTION 4 — CROSS-MODEL SUMMARY (Aggregate metrics per strategy)
+────────────────────────────────────────────────────────────────────────
+Mean across all functions for each model. Kimi-K2 CoT uses 6 functions.
+
+  Metric: Executability
+  Strategy           GPT-120B    LLaMA-70B      Kimi-K2  Overall Avg
+  -------------- ------------ ------------ ------------ ------------
+  Zero-Shot             1.000        0.000        1.000        0.667
+  Few-Shot              1.000        0.000        0.000        0.333
+  Structured            1.000        0.300        0.900        0.733
+  CoT                   1.000        0.900        0.833        0.911
+
+  Metric: Pass Rate
+  Strategy           GPT-120B    LLaMA-70B      Kimi-K2  Overall Avg
+  -------------- ------------ ------------ ------------ ------------
+  Zero-Shot             0.500        0.000        0.500        0.333
+  Few-Shot              0.500        0.000        0.000        0.167
+  Structured            0.400        0.100        0.300        0.267
+  CoT                   0.300        0.100        0.000        0.133
+
+  Metric: Mutation Score
+  Strategy           GPT-120B    LLaMA-70B      Kimi-K2  Overall Avg
+  -------------- ------------ ------------ ------------ ------------
+  Zero-Shot             0.800        0.000        0.800        0.533
+  Few-Shot              0.700        0.000        0.000        0.233
+  Structured            0.800        0.400        0.800        0.667
+  CoT                   0.800        0.800        0.667        0.756
+
+  Metric: Line Coverage
+  Strategy           GPT-120B    LLaMA-70B      Kimi-K2  Overall Avg
+  -------------- ------------ ------------ ------------ ------------
+  Zero-Shot            96.070        0.000       96.250       64.107
+  Few-Shot             92.917        0.000        2.083       31.667
+  Structured           90.417       23.837       89.583       67.946
+  CoT                  97.083       84.167       77.083       86.111
+
+  Metric: Branch Coverage
+  Strategy           GPT-120B    LLaMA-70B      Kimi-K2  Overall Avg
+  -------------- ------------ ------------ ------------ ------------
+  Zero-Shot            92.222        0.000       92.500       61.574
+  Few-Shot             89.167        0.000        0.833       30.000
+  Structured           88.334       23.056       85.833       65.741
+  CoT                  95.000       81.667       70.833       82.500
+
+────────────────────────────────────────────────────────────────────────
+SECTION 5 — KEY STATISTICAL FINDINGS (ready to cite in paper)
+────────────────────────────────────────────────────────────────────────
+
+Use these statements directly in your Results section:
+
+  [Executability — GPT-120B]
+  All strategies achieved identical executability (100%) on GPT-OSS-120B,
+  producing no variance and rendering statistical comparison impossible.
+  This is itself a meaningful finding: large models are prompt-agnostic
+  with respect to syntactic correctness.
+
+  [Executability — LLaMA-70B]
+  Check Section 2 Friedman results above. If p < 0.05, cite:
+  'Prompting strategy had a statistically significant effect on executability
+  for LLaMA-3.3-70B (Friedman χ²=X, p=Y). Pairwise analysis (Wilcoxon,
+  Bonferroni-corrected) showed that CoT significantly outperformed Zero-Shot
+  (p=Z, Cliff's δ=W, large effect).'
+
+  [Mutation Score dissociation]
+  'Despite near-zero pass rates, LLaMA-3.3-70B CoT achieved 80% mutation
+  score, demonstrating that mutation score and pass rate can dissociate.
+  This was not observed in GPT-OSS-120B, where both metrics were correlated.
+  Practitioners should not rely on mutation score alone as a proxy for
+  test correctness.'
+
+  [Partition List]
+  'partition_list was the only function where all models × strategies
+  failed to kill the mutant, identifying linked list manipulation as a
+  systematic failure mode for current LLM test generation.'

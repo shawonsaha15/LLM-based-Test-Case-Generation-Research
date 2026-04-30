@@ -1,0 +1,215 @@
+{
+  "cot": {
+    "total": 9,
+    "passed": 0,
+    "failed": 9,
+    "files": [
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\cot\\candy_distribution.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n________________ TestCandyDistribution.test_decreasing_ratings ________________\n\nself = <candy_distribution.TestCandyDistribution testMethod=test_decreasing_ratings>\n\n    def test_decreasing_ratings(self):\n>       self.assertEqual(candy_distribution([5, 4, 3, 2, 1]), 5)\nE       AssertionError: 15 != 5\n\n..\\generated_tests\\cot\\candy_distribution.py:38: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\cot\\candy_distribution.py::TestCandyDistribution::test_decreasing_ratings\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\cot\\frog_jump.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n____________________ TestCanCross.test_edge_case_no_jumps _____________________\n\nself = <frog_jump.TestCanCross testMethod=test_edge_case_no_jumps>\n\n    def test_edge_case_no_jumps(self):\n        stones = [0, 0]\n>       self.assertFalse(can_cross(stones))\nE       AssertionError: True is not false\n\n..\\generated_tests\\cot\\frog_jump.py:39: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\cot\\frog_jump.py::TestCanCross::test_edge_case_no_jumps\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.09s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\cot\\letter_combination_of_phone_numbers.py",
+        "passed": false,
+        "output": "...F\n================================== FAILURES ===================================\n________________ TestLetterCombinations.test_non_string_input _________________\n\nself = <letter_combination_of_phone_numbers.TestLetterCombinations testMethod=test_non_string_input>\n\n    def test_non_string_input(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\cot\\letter_combination_of_phone_numbers.py:48: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\cot\\letter_combination_of_phone_numbers.py::TestLetterCombinations::test_non_string_input\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 3 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\cot\\longest_palindrome_subsequence.py",
+        "passed": false,
+        "output": "\n=================================== ERRORS ====================================\n___ ERROR collecting generated_tests/cot/longest_palindrome_subsequence.py ____\n..\\generated_tests\\cot\\longest_palindrome_subsequence.py:30: in <module>\n    class TestLongestPalindromeSubseq(unittest.TestCase):\n                                      ^^^^^^^^\nE   NameError: name 'unittest' is not defined. Did you forget to import 'unittest'?\n=========================== short test summary info ===========================\nERROR ..\\generated_tests\\cot\\longest_palindrome_subsequence.py - NameError: n...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.22s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\cot\\partition_list.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n____________ TestPartitionList.test_invalid_input_negative_integer ____________\n\nself = <partition_list.TestPartitionList testMethod=test_invalid_input_negative_integer>\n\n    def test_invalid_input_negative_integer(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\cot\\partition_list.py:70: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\cot\\partition_list.py::TestPartitionList::test_invalid_input_negative_integer\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.09s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\cot\\pascal_triangle.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________ TestGeneratePascalsTriangle.test_negative_rows ________________\n\nself = <pascal_triangle.TestGeneratePascalsTriangle testMethod=test_negative_rows>\n\n    def test_negative_rows(self):\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\cot\\pascal_triangle.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\cot\\pascal_triangle.py::TestGeneratePascalsTriangle::test_negative_rows\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.09s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\cot\\predict_the_winner.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n____________________ TestPredictTheWinner.test_edge_cases _____________________\n\nself = <predict_the_winner.TestPredictTheWinner testMethod=test_edge_cases>\n\n    def test_edge_cases(self):\n        self.assertTrue(predict_the_winner([1]))\n>       self.assertTrue(predict_the_winner([]))\n                        ^^^^^^^^^^^^^^^^^^^^^^\n\n..\\generated_tests\\cot\\predict_the_winner.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nnums = []\n\n    def predict_the_winner(nums: List[int]) -> bool:\n        n = len(nums)\n        dp = [[0] * n for _ in range(n)]\n    \n        for i in range(n):\n            dp[i][i] = nums[i]\n    \n        for diagonal in range(1, n):\n            for i in range(n - diagonal):\n                j = i + diagonal\n                dp[i][j] = max(\n                    nums[i] - dp[i + 1][j],\n                    nums[j] - dp[i][j - 1]\n                )\n    \n>       return dp[0][n - 1] >= 0\n               ^^^^^\nE       IndexError: list index out of range\n\n..\\generated_tests\\cot\\predict_the_winner.py:19: IndexError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\cot\\predict_the_winner.py::TestPredictTheWinner::test_edge_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.09s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\cot\\search_a_2D_matrix.py",
+        "passed": false,
+        "output": "....F\n================================== FAILURES ===================================\n_____________ TestSearchMatrix.test_invalid_input_non_int_target ______________\n\nself = <search_a_2D_matrix.TestSearchMatrix testMethod=test_invalid_input_non_int_target>\n\n    def test_invalid_input_non_int_target(self):\n        matrix = [[1, 2, 3]]\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\cot\\search_a_2D_matrix.py:60: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\cot\\search_a_2D_matrix.py::TestSearchMatrix::test_invalid_input_non_int_target\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 4 passed in 0.09s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\cot\\word_break.py",
+        "passed": false,
+        "output": "\n=================================== ERRORS ====================================\n_____________ ERROR collecting generated_tests/cot/word_break.py ______________\nImportError while importing test module 'D:\\Research\\SQA\\generated_tests\\cot\\word_break.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nC:\\Users\\Swapnil Saha\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\importlib\\__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\generated_tests\\cot\\word_break.py:22: in <module>\n    from your_module import word_break  # replace 'your_module' with the actual module name\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'your_module'\n=========================== short test summary info ===========================\nERROR ..\\generated_tests\\cot\\word_break.py\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.19s\n"
+      }
+    ]
+  },
+  "few_shot": {
+    "total": 9,
+    "passed": 2,
+    "failed": 7,
+    "files": [
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\few_shot\\candy_distribution.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_________________ TestCandyDistribution.test_decreasing_list __________________\n\nself = <candy_distribution.TestCandyDistribution testMethod=test_decreasing_list>\n\n    def test_decreasing_list(self):\n>       self.assertEqual(candy_distribution([1, 2, 3, 4, 5]), 5)\nE       AssertionError: 15 != 5\n\n..\\generated_tests\\few_shot\\candy_distribution.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\few_shot\\candy_distribution.py::TestCandyDistribution::test_decreasing_list\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.09s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\few_shot\\dota2_senate.py",
+        "passed": false,
+        "output": "Command '['pytest', 'D:\\\\Research\\\\SQA\\\\generated_tests\\\\few_shot\\\\dota2_senate.py', '--maxfail=1', '--disable-warnings', '-q']' timed out after 20 seconds"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\few_shot\\letter_combination_of_phone_numbers.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n_________ TestLetterCombinations.test_multiple_digits_with_duplicates _________\n\nself = <letter_combination_of_phone_numbers.TestLetterCombinations testMethod=test_multiple_digits_with_duplicates>\n\n    def test_multiple_digits_with_duplicates(self):\n>       self.assertEqual(letter_combinations(\"22\"), [\"a\", \"a\", \"b\", \"b\", \"c\", \"c\"])\nE       AssertionError: Lists differ: ['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc'] != ['a', 'a', 'b', 'b', 'c', 'c']\nE       \nE       First differing element 0:\nE       'aa'\nE       'a'\nE       \nE       First list contains 3 additional elements.\nE       First extra element 6:\nE       'ca'\nE       \nE       - ['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc']\nE       + ['a', 'a', 'b', 'b', 'c', 'c']\n\n..\\generated_tests\\few_shot\\letter_combination_of_phone_numbers.py:40: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\few_shot\\letter_combination_of_phone_numbers.py::TestLetterCombinations::test_multiple_digits_with_duplicates\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\few_shot\\longest_palindrome_subsequence.py",
+        "passed": true,
+        "output": ".....                                                                    [100%]\n5 passed in 0.05s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\few_shot\\partition_list.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n________________________ TestPartitionList.test_basic _________________________\n\nself = <partition_list.TestPartitionList testMethod=test_basic>\n\n    def test_basic(self):\n        node1 = ListNode(1)\n        node2 = ListNode(4)\n        node3 = ListNode(3)\n        node4 = ListNode(2)\n        node5 = ListNode(5)\n    \n        node1.next = node2\n        node2.next = node3\n        node3.next = node4\n        node4.next = node5\n    \n        result = partition_list(node1, 3)\n    \n        self.assertEqual(result.val, 1)\n        self.assertEqual(result.next.val, 2)\n        self.assertEqual(result.next.next.val, 4)\n>       self.assertEqual(result.next.next.next.val, 5)\nE       AssertionError: 3 != 5\n\n..\\generated_tests\\few_shot\\partition_list.py:50: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\few_shot\\partition_list.py::TestPartitionList::test_basic\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\few_shot\\pascal_triangle.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_______________ TestGeneratePascalsTriangle.test_negative_rows ________________\n\nself = <pascal_triangle.TestGeneratePascalsTriangle testMethod=test_negative_rows>\n\n    def test_negative_rows(self):\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\few_shot\\pascal_triangle.py:32: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\few_shot\\pascal_triangle.py::TestGeneratePascalsTriangle::test_negative_rows\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\few_shot\\predict_the_winner.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n____________________ TestPredictTheWinner.test_empty_list _____________________\n\nself = <predict_the_winner.TestPredictTheWinner testMethod=test_empty_list>\n\n    def test_empty_list(self):\n>       self.assertTrue(predict_the_winner([]))\n                        ^^^^^^^^^^^^^^^^^^^^^^\n\n..\\generated_tests\\few_shot\\predict_the_winner.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nnums = []\n\n    def predict_the_winner(nums: List[int]) -> bool:\n        n = len(nums)\n        dp = [[0] * n for _ in range(n)]\n    \n        for i in range(n):\n            dp[i][i] = nums[i]\n    \n        for diagonal in range(1, n):\n            for i in range(n - diagonal):\n                j = i + diagonal\n                dp[i][j] = max(\n                    nums[i] - dp[i + 1][j],\n                    nums[j] - dp[i][j - 1]\n                )\n    \n>       return dp[0][n - 1] >= 0\n               ^^^^^\nE       IndexError: list index out of range\n\n..\\generated_tests\\few_shot\\predict_the_winner.py:19: IndexError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\few_shot\\predict_the_winner.py::TestPredictTheWinner::test_empty_list\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\few_shot\\search_a_2D_matrix.py",
+        "passed": true,
+        "output": "......                                                                   [100%]\n6 passed in 0.02s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\few_shot\\word_break.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________________ TestWordBreak.test_empty_string _______________________\n\nself = <word_break.TestWordBreak testMethod=test_empty_string>\n\n    def test_empty_string(self):\n>       self.assertTrue(word_break(\"\", [\"a\", \"b\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\few_shot\\word_break.py:32: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\few_shot\\word_break.py::TestWordBreak::test_empty_string\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.09s\n"
+      }
+    ]
+  },
+  "structured": {
+    "total": 9,
+    "passed": 0,
+    "failed": 9,
+    "files": [
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\structured\\candy_distribution.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n__________________ TestCandyDistribution.test_invalid_inputs __________________\n\nself = <candy_distribution.TestCandyDistribution testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\structured\\candy_distribution.py:39: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\structured\\candy_distribution.py::TestCandyDistribution::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\structured\\frog_jump.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n_______________________ TestCanCross.test_normal_cases ________________________\n\nself = <frog_jump.TestCanCross testMethod=test_normal_cases>\n\n    def test_normal_cases(self):\n>       self.assertTrue(can_cross([0, 2, 5, 10, 17, 20, 28, 35]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\structured\\frog_jump.py:26: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\structured\\frog_jump.py::TestCanCross::test_normal_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\structured\\letter_combination_of_phone_numbers.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_________________ TestLetterCombinations.test_invalid_inputs __________________\n\nself = <letter_combination_of_phone_numbers.TestLetterCombinations testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            letter_combinations(123)\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\structured\\letter_combination_of_phone_numbers.py:42: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\structured\\letter_combination_of_phone_numbers.py::TestLetterCombinations::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\structured\\longest_palindrome_subsequence.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_______________ TestLongestPalindromeSubseq.test_invalid_inputs _______________\n\nself = <longest_palindrome_subsequence.TestLongestPalindromeSubseq testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            longest_palindrome_subseq(123)\n        with self.assertRaises(TypeError):\n            longest_palindrome_subseq(\"abc\" + 123)\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\structured\\longest_palindrome_subsequence.py:37: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\structured\\longest_palindrome_subsequence.py::TestLongestPalindromeSubseq::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\structured\\partition_list.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_____________________ TestPartitionList.test_normal_cases _____________________\n\nself = <partition_list.TestPartitionList object at 0x0000028DD726CE10>\n\n    def test_normal_cases(self):\n        # Test case 1: List with numbers less than x\n        head = ListNode(1, ListNode(4, ListNode(3, ListNode(2, ListNode(5)))))\n        x = 3\n        result = partition_list(head, x)\n>       self.assertEqual(result.val, 1)\n        ^^^^^^^^^^^^^^^^\nE       AttributeError: 'TestPartitionList' object has no attribute 'assertEqual'\n\n..\\generated_tests\\structured\\partition_list.py:38: AttributeError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\structured\\partition_list.py::TestPartitionList::test_normal_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.62s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\structured\\pascal_triangle.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_______________ TestGeneratePascalsTriangle.test_invalid_inputs _______________\n\nself = <pascal_triangle.TestGeneratePascalsTriangle testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            generate_pascals_triangle('a')\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\structured\\pascal_triangle.py:31: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\structured\\pascal_triangle.py::TestGeneratePascalsTriangle::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\structured\\predict_the_winner.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n____________________ TestPredictTheWinner.test_edge_cases _____________________\n\nself = <predict_the_winner.TestPredictTheWinner testMethod=test_edge_cases>\n\n    def test_edge_cases(self):\n        self.assertTrue(predict_the_winner([1]))\n>       self.assertTrue(predict_the_winner([]))\n                        ^^^^^^^^^^^^^^^^^^^^^^\n\n..\\generated_tests\\structured\\predict_the_winner.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nnums = []\n\n    def predict_the_winner(nums: List[int]) -> bool:\n        n = len(nums)\n        dp = [[0] * n for _ in range(n)]\n    \n        for i in range(n):\n            dp[i][i] = nums[i]\n    \n        for diagonal in range(1, n):\n            for i in range(n - diagonal):\n                j = i + diagonal\n                dp[i][j] = max(\n                    nums[i] - dp[i + 1][j],\n                    nums[j] - dp[i][j - 1]\n                )\n    \n>       return dp[0][n - 1] >= 0\n               ^^^^^\nE       IndexError: list index out of range\n\n..\\generated_tests\\structured\\predict_the_winner.py:19: IndexError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\structured\\predict_the_winner.py::TestPredictTheWinner::test_edge_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\structured\\search_a_2D_matrix.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n____________________ TestSearchMatrix.test_invalid_inputs _____________________\n\nself = <search_a_2D_matrix.TestSearchMatrix testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        matrix = [[1, 3, 5], [7, 9, 11], [13, 15, 17]]\n        with self.assertRaises(TypeError):\n            search_matrix(matrix, 'a')\n        with self.assertRaises(TypeError):\n            search_matrix('matrix', 5)\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\structured\\search_a_2D_matrix.py:46: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\structured\\search_a_2D_matrix.py::TestSearchMatrix::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\structured\\word_break.py",
+        "passed": false,
+        "output": "\n=================================== ERRORS ====================================\n__________ ERROR collecting generated_tests/structured/word_break.py __________\nImportError while importing test module 'D:\\Research\\SQA\\generated_tests\\structured\\word_break.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nC:\\Users\\Swapnil Saha\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\importlib\\__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\generated_tests\\structured\\word_break.py:22: in <module>\n    from your_module import word_break  # Replace 'your_module' with the actual module name\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'your_module'\n=========================== short test summary info ===========================\nERROR ..\\generated_tests\\structured\\word_break.py\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.24s\n"
+      }
+    ]
+  },
+  "zero_shot": {
+    "total": 10,
+    "passed": 2,
+    "failed": 8,
+    "files": [
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\candy_distribution.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_____________ TestCandyDistribution.test_edge_case_all_decreasing _____________\n\nself = <candy_distribution.TestCandyDistribution testMethod=test_edge_case_all_decreasing>\n\n    def test_edge_case_all_decreasing(self):\n>       self.assertEqual(candy_distribution([1, 2, 3]), 3)\nE       AssertionError: 6 != 3\n\n..\\generated_tests\\zero_shot\\candy_distribution.py:41: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\zero_shot\\candy_distribution.py::TestCandyDistribution::test_edge_case_all_decreasing\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\dota2_senate.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n______________ TestPredictPartyVictory.test_edge_case_all_banned ______________\n\nself = <dota2_senate.TestPredictPartyVictory testMethod=test_edge_case_all_banned>\n\n    def test_edge_case_all_banned(self):\n        self.assertEqual(predict_party_victory(\"RDRDRD\" + \"R\" * 10), \"Radiant\")\n>       self.assertEqual(predict_party_victoy(\"DRDRDR\" + \"D\" * 10), \"Dire\")\n                         ^^^^^^^^^^^^^^^^^^^^\nE       NameError: name 'predict_party_victoy' is not defined\n\n..\\generated_tests\\zero_shot\\dota2_senate.py:54: NameError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\zero_shot\\dota2_senate.py::TestPredictPartyVictory::test_edge_case_all_banned\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\frog_jump.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n____________________ TestCanCross.test_edge_case_no_jumps _____________________\n\nself = <frog_jump.TestCanCross testMethod=test_edge_case_no_jumps>\n\n    def test_edge_case_no_jumps(self):\n        stones = [0, 0]\n>       self.assertFalse(can_cross(stones))\nE       AssertionError: True is not false\n\n..\\generated_tests\\zero_shot\\frog_jump.py:38: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\zero_shot\\frog_jump.py::TestCanCross::test_edge_case_no_jumps\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\letter_combination_of_phone_numbers.py",
+        "passed": true,
+        "output": "........                                                                 [100%]\n8 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\longest_palindrome_subsequence.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n__________ TestLongestPalindromeSubseq.test_edge_case_two_characters __________\n\nself = <longest_palindrome_subsequence.TestLongestPalindromeSubseq testMethod=test_edge_case_two_characters>\n\n    def test_edge_case_two_characters(self):\n>       self.assertEqual(longest_palindrome_subseq(\"ab\"), 2)\nE       AssertionError: 1 != 2\n\n..\\generated_tests\\zero_shot\\longest_palindrome_subsequence.py:34: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\zero_shot\\longest_palindrome_subsequence.py::TestLongestPalindromeSubseq::test_edge_case_two_characters\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\partition_list.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_____________ TestPartitionList.test_edge_case_partition_at_zero ______________\n\nself = <partition_list.TestPartitionList testMethod=test_edge_case_partition_at_zero>\n\n    def test_edge_case_partition_at_zero(self):\n        # Create a linked list: 1 -> 4 -> 3 -> 2 -> 5 -> 2\n        head = ListNode(1)\n        head.next = ListNode(4)\n        head.next.next = ListNode(3)\n        head.next.next.next = ListNode(2)\n        head.next.next.next.next = ListNode(5)\n        head.next.next.next.next.next = ListNode(2)\n    \n        # Partition the list at x = 0\n        result = partition_list(head, 0)\n    \n        # Expected result: 1 -> 2 -> 2 -> 4 -> 3 -> 5\n        expected = ListNode(1)\n        expected.next = ListNode(2)\n        expected.next.next = ListNode(2)\n        expected.next.next.next = ListNode(4)\n        expected.next.next.next.next = ListNode(3)\n        expected.next.next.next.next.next = ListNode(5)\n    \n        self.assertEqual(result.val, expected.val)\n>       self.assertEqual(result.next.val, expected.next.val)\nE       AssertionError: 4 != 2\n\n..\\generated_tests\\zero_shot\\partition_list.py:102: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\zero_shot\\partition_list.py::TestPartitionList::test_edge_case_partition_at_zero\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\pascal_triangle.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n__________ TestGeneratePascalsTriangle.test_edge_case_negative_rows ___________\n\nself = <pascal_triangle.TestGeneratePascalsTriangle testMethod=test_edge_case_negative_rows>\n\n    def test_edge_case_negative_rows(self):\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\zero_shot\\pascal_triangle.py:27: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\zero_shot\\pascal_triangle.py::TestGeneratePascalsTriangle::test_edge_case_negative_rows\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\predict_the_winner.py",
+        "passed": true,
+        "output": "........                                                                 [100%]\n8 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\search_a_2D_matrix.py",
+        "passed": false,
+        "output": "......F\n================================== FAILURES ===================================\n_____________ TestSearchMatrix.test_invalid_input_non_int_target ______________\n\nself = <search_a_2D_matrix.TestSearchMatrix testMethod=test_invalid_input_non_int_target>\n\n    def test_invalid_input_non_int_target(self):\n        matrix = [[1, 2, 3]]\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\zero_shot\\search_a_2D_matrix.py:67: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\zero_shot\\search_a_2D_matrix.py::TestSearchMatrix::test_invalid_input_non_int_target\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 6 passed in 0.10s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\zero_shot\\word_break.py",
+        "passed": false,
+        "output": "\n=================================== ERRORS ====================================\n__________ ERROR collecting generated_tests/zero_shot/word_break.py ___________\nImportError while importing test module 'D:\\Research\\SQA\\generated_tests\\zero_shot\\word_break.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nC:\\Users\\Swapnil Saha\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\importlib\\__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n..\\generated_tests\\zero_shot\\word_break.py:22: in <module>\n    from your_module import word_break  # Replace 'your_module' with the actual module name\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   ModuleNotFoundError: No module named 'your_module'\n=========================== short test summary info ===========================\nERROR ..\\generated_tests\\zero_shot\\word_break.py\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.19s\n"
+      }
+    ]
+  }
+}

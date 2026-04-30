@@ -1,0 +1,8 @@
+file,model,variant,total_functions,passed,failed,executable,mutation_killed,avg_line_coverage,avg_branch_coverage,avg_redundancy_rate
+results.json,First_Tests,llama-3.1-8b-instant,0,0,0,0,0,0.0,0.0,0.0
+results.json,First_Tests,llama-3.3-70b-versatile,0,0,0,0,0,0.0,0.0,0.0
+results.json,First_Tests,openai-gpt-oss-120b,0,0,0,0,0,0.0,0.0,0.0
+results.json,openai-gpt-oss-120b,cot,10,3,7,10,8,97.08,95.0,0.0
+results.json,openai-gpt-oss-120b,few_shot,10,5,5,10,7,96.25,92.5,0.0
+results.json,openai-gpt-oss-120b,structured,10,4,6,10,8,93.75,91.67,0.0
+results.json,openai-gpt-oss-120b,zero_shot,10,5,5,10,8,96.07,92.22,0.0

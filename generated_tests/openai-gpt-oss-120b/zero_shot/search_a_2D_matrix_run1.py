@@ -1,0 +1,80 @@
+import unittest
+
+class TestSearchMatrix(unittest.TestCase):
+    def test_empty_matrix(self):
+        self.assertFalse(search_matrix([], 5))
+
+    def test_empty_row(self):
+        self.assertFalse(search_matrix([[]], 5))
+
+    def test_single_element_found(self):
+        self.assertTrue(search_matrix([[7]], 7))
+
+    def test_single_element_not_found(self):
+        self.assertFalse(search_matrix([[7]], 3))
+
+    def test_target_first_element(self):
+        matrix = [
+            [1, 3, 5],
+            [7, 9, 11],
+            [13, 15, 17]
+        ]
+        self.assertTrue(search_matrix(matrix, 1))
+
+    def test_target_last_element(self):
+        matrix = [
+            [1, 3, 5],
+            [7, 9, 11],
+            [13, 15, 17]
+        ]
+        self.assertTrue(search_matrix(matrix, 17))
+
+    def test_target_present_middle(self):
+        matrix = [
+            [1, 2, 3, 4],
+            [5, 6, 7, 8],
+            [9, 10, 11, 12]
+        ]
+        self.assertTrue(search_matrix(matrix, 7))
+
+    def test_target_absent_between_values(self):
+        matrix = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ]
+        self.assertFalse(search_matrix(matrix, 0))   # less than min
+        self.assertFalse(search_matrix(matrix, 10))  # greater than max
+        self.assertFalse(search_matrix(matrix, 5.5))  # non‑integer between values
+
+    def test_large_matrix(self):
+        # Create a 100x100 matrix with values 0..9999 in row‑major order
+        size = 100
+        matrix = [list(range(i * size, (i + 1) * size)) for i in range(size)]
+        # Test a few random positions
+        self.assertTrue(search_matrix(matrix, 0))          # first element
+        self.assertTrue(search_matrix(matrix, 9999))       # last element
+        self.assertTrue(search_matrix(matrix, 1234))       # somewhere in the middle
+        self.assertFalse(search_matrix(matrix, -1))        # below range
+        self.assertFalse(search_matrix(matrix, 10000))     # above range
+
+    def test_non_square_matrix(self):
+        matrix = [
+            [1, 2, 3, 4, 5],
+            [6, 7, 8, 9, 10]
+        ]
+        self.assertTrue(search_matrix(matrix, 6))
+        self.assertTrue(search_matrix(matrix, 10))
+        self.assertFalse(search_matrix(matrix, 11))
+        self.assertFalse(search_matrix(matrix, 0))
+
+    def test_matrix_with_duplicate_values(self):
+        # Although the algorithm assumes a strictly increasing order,
+        # it should still correctly locate a target if duplicates exist.
+        matrix = [
+            [1, 2, 2, 3],
+            [4, 5, 5, 6]
+        ]
+        self.assertTrue(search_matrix(matrix, 2))
+        self.assertTrue(search_matrix(matrix, 5))
+        self.assertFalse(search_matrix(matrix, 7))

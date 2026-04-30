@@ -1,0 +1,487 @@
+{
+  "First_Tests": {
+    "llama-3.1-8b-instant": {
+      "total_functions": 0,
+      "passed": 0,
+      "failed": 0,
+      "executable": 0,
+      "mutation_killed": 0,
+      "avg_line_coverage": 0,
+      "avg_branch_coverage": 0,
+      "avg_redundancy_rate": 0,
+      "function_results": []
+    },
+    "llama-3.3-70b-versatile": {
+      "total_functions": 0,
+      "passed": 0,
+      "failed": 0,
+      "executable": 0,
+      "mutation_killed": 0,
+      "avg_line_coverage": 0,
+      "avg_branch_coverage": 0,
+      "avg_redundancy_rate": 0,
+      "function_results": []
+    },
+    "openai-gpt-oss-120b": {
+      "total_functions": 0,
+      "passed": 0,
+      "failed": 0,
+      "executable": 0,
+      "mutation_killed": 0,
+      "avg_line_coverage": 0,
+      "avg_branch_coverage": 0,
+      "avg_redundancy_rate": 0,
+      "function_results": []
+    }
+  },
+  "openai-gpt-oss-120b": {
+    "cot": {
+      "total_functions": 10,
+      "passed": 3,
+      "failed": 7,
+      "executable": 10,
+      "mutation_killed": 8,
+      "avg_line_coverage": 97.08,
+      "avg_branch_coverage": 95.0,
+      "avg_redundancy_rate": 0.0,
+      "function_results": [
+        {
+          "function": "candy_distribution",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "predict_party_victory",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "can_cross",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "letter_combinations",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "longest_palindrome_subseq",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "partition_list",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": false,
+          "line_coverage": 70.83,
+          "branch_coverage": 50.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "generate_pascals_triangle",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "predict_the_winner",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "search_matrix",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": false,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "word_break",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        }
+      ]
+    },
+    "few_shot": {
+      "total_functions": 10,
+      "passed": 5,
+      "failed": 5,
+      "executable": 10,
+      "mutation_killed": 7,
+      "avg_line_coverage": 96.25,
+      "avg_branch_coverage": 92.5,
+      "avg_redundancy_rate": 0.0,
+      "function_results": [
+        {
+          "function": "candy_distribution",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "predict_party_victory",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "can_cross",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": false,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "letter_combinations",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "longest_palindrome_subseq",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "partition_list",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": false,
+          "line_coverage": 62.5,
+          "branch_coverage": 25.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "generate_pascals_triangle",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "predict_the_winner",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "search_matrix",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": false,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "word_break",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        }
+      ]
+    },
+    "structured": {
+      "total_functions": 10,
+      "passed": 4,
+      "failed": 6,
+      "executable": 10,
+      "mutation_killed": 8,
+      "avg_line_coverage": 93.75,
+      "avg_branch_coverage": 91.67,
+      "avg_redundancy_rate": 0.0,
+      "function_results": [
+        {
+          "function": "candy_distribution",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "predict_party_victory",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 66.67,
+          "branch_coverage": 66.67,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "can_cross",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "letter_combinations",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "longest_palindrome_subseq",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "partition_list",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": false,
+          "line_coverage": 70.83,
+          "branch_coverage": 50.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "generate_pascals_triangle",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "predict_the_winner",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "search_matrix",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": false,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "word_break",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        }
+      ]
+    },
+    "zero_shot": {
+      "total_functions": 10,
+      "passed": 5,
+      "failed": 5,
+      "executable": 10,
+      "mutation_killed": 8,
+      "avg_line_coverage": 96.07,
+      "avg_branch_coverage": 92.22,
+      "avg_redundancy_rate": 0.0,
+      "function_results": [
+        {
+          "function": "candy_distribution",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "predict_party_victory",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 98.2,
+          "branch_coverage": 97.22,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "can_cross",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "letter_combinations",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "longest_palindrome_subseq",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "partition_list",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": false,
+          "line_coverage": 62.5,
+          "branch_coverage": 25.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "generate_pascals_triangle",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "predict_the_winner",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "search_matrix",
+          "runs": 3,
+          "executable": true,
+          "passed": true,
+          "mutation_killed": false,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        },
+        {
+          "function": "word_break",
+          "runs": 3,
+          "executable": true,
+          "passed": false,
+          "mutation_killed": true,
+          "line_coverage": 100.0,
+          "branch_coverage": 100.0,
+          "redundancy_rate": 0.0
+        }
+      ]
+    }
+  }
+}

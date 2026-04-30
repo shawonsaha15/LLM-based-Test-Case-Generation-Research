@@ -1,0 +1,10 @@
+Write unit tests for this Python function using the unittest framework.
+
+IMPORTANT RULES:
+- Do NOT include any import statement for the function under test. It will be injected automatically.
+- Do NOT redefine or copy the function body.
+- Do NOT add any if __name__ == "__main__" block.
+- Output ONLY the Python test class code, nothing else.
+
+Function:
+<function_code_here>

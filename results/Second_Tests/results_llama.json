@@ -1,0 +1,630 @@
+{
+  "cot": {
+    "total": 30,
+    "passed": 14,
+    "failed": 16,
+    "files": [
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\candy_distribution_run1.py",
+        "passed": true,
+        "output": ".......                                                                  [100%]\n7 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\candy_distribution_run2.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n___________________ TestCandyDistribution.test_large_input ____________________\n\nself = <candy_distribution_run2.TestCandyDistribution testMethod=test_large_input>\n\n    def test_large_input(self):\n>       self.assertEqual(candy_distribution([1, 2, 2, 1]), 7)\nE       AssertionError: 6 != 7\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\candy_distribution_run2.py:53: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\candy_distribution_run2.py::TestCandyDistribution::test_large_input\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\candy_distribution_run3.py",
+        "passed": false,
+        "output": "....F\n================================== FAILURES ===================================\n________________ TestCandyDistribution.test_invalid_input_type ________________\n\nself = <candy_distribution_run3.TestCandyDistribution testMethod=test_invalid_input_type>\n\n    def test_invalid_input_type(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\candy_distribution_run3.py:47: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\candy_distribution_run3.py::TestCandyDistribution::test_invalid_input_type\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 4 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\dota2_senate_run1.py",
+        "passed": false,
+        "output": "Command '['pytest', 'D:\\\\Research\\\\SQA\\\\generated_tests\\\\llama-3.3-70b-versatile\\\\cot\\\\dota2_senate_run1.py', '--maxfail=1', '--disable-warnings', '-q']' timed out after 20 seconds"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\dota2_senate_run2.py",
+        "passed": false,
+        "output": "Command '['pytest', 'D:\\\\Research\\\\SQA\\\\generated_tests\\\\llama-3.3-70b-versatile\\\\cot\\\\dota2_senate_run2.py', '--maxfail=1', '--disable-warnings', '-q']' timed out after 20 seconds"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\dota2_senate_run3.py",
+        "passed": false,
+        "output": "Command '['pytest', 'D:\\\\Research\\\\SQA\\\\generated_tests\\\\llama-3.3-70b-versatile\\\\cot\\\\dota2_senate_run3.py', '--maxfail=1', '--disable-warnings', '-q']' timed out after 20 seconds"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\frog_jump_run1.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\frog_jump_run2.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\frog_jump_run3.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\letter_combination_of_phone_numbers_run1.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n___________ TestLetterCombinations.test_invalid_input_with_letters ____________\n\nself = <letter_combination_of_phone_numbers_run1.TestLetterCombinations testMethod=test_invalid_input_with_letters>\n\n    def test_invalid_input_with_letters(self):\n>       with self.assertRaises(KeyError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: KeyError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\letter_combination_of_phone_numbers_run1.py:44: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\letter_combination_of_phone_numbers_run1.py::TestLetterCombinations::test_invalid_input_with_letters\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\letter_combination_of_phone_numbers_run2.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n___________ TestLetterCombinations.test_invalid_input_with_letters ____________\n\nself = <letter_combination_of_phone_numbers_run2.TestLetterCombinations testMethod=test_invalid_input_with_letters>\n\n    def test_invalid_input_with_letters(self):\n>       with self.assertRaises(KeyError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: KeyError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\letter_combination_of_phone_numbers_run2.py:44: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\letter_combination_of_phone_numbers_run2.py::TestLetterCombinations::test_invalid_input_with_letters\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\letter_combination_of_phone_numbers_run3.py",
+        "passed": true,
+        "output": "......                                                                   [100%]\n6 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\longest_palindrome_subsequence_run1.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\longest_palindrome_subsequence_run2.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\longest_palindrome_subsequence_run3.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\partition_list_run1.py",
+        "passed": true,
+        "output": "......                                                                   [100%]\n6 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\partition_list_run2.py",
+        "passed": true,
+        "output": "......                                                                   [100%]\n6 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\partition_list_run3.py",
+        "passed": true,
+        "output": "......                                                                   [100%]\n6 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\pascal_triangle_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_______________ TestGeneratePascalsTriangle.test_invalid_inputs _______________\n\nself = <pascal_triangle_run1.TestGeneratePascalsTriangle testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            generate_pascals_triangle('a')\n        with self.assertRaises(TypeError):\n            generate_pascals_triangle(1.5)\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\pascal_triangle_run1.py:32: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\pascal_triangle_run1.py::TestGeneratePascalsTriangle::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\pascal_triangle_run2.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_______________ TestGeneratePascalsTriangle.test_invalid_inputs _______________\n\nself = <pascal_triangle_run2.TestGeneratePascalsTriangle testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            generate_pascals_triangle('a')\n        with self.assertRaises(TypeError):\n            generate_pascals_triangle(1.5)\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\pascal_triangle_run2.py:32: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\pascal_triangle_run2.py::TestGeneratePascalsTriangle::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\pascal_triangle_run3.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_______________ TestGeneratePascalsTriangle.test_invalid_inputs _______________\n\nself = <pascal_triangle_run3.TestGeneratePascalsTriangle testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            generate_pascals_triangle('a')\n        with self.assertRaises(TypeError):\n            generate_pascals_triangle(1.5)\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\pascal_triangle_run3.py:32: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\pascal_triangle_run3.py::TestGeneratePascalsTriangle::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\predict_the_winner_run1.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n______________ TestPredictTheWinner.test_edge_case_two_elements _______________\n\nself = <predict_the_winner_run1.TestPredictTheWinner testMethod=test_edge_case_two_elements>\n\n    def test_edge_case_two_elements(self):\n        self.assertTrue(predict_the_winner([1, 1]))\n>       self.assertFalse(predict_the_winner([1, 2]))\nE       AssertionError: True is not false\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\predict_the_winner_run1.py:38: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\predict_the_winner_run1.py::TestPredictTheWinner::test_edge_case_two_elements\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\predict_the_winner_run2.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n______________ TestPredictTheWinner.test_edge_case_two_elements _______________\n\nself = <predict_the_winner_run2.TestPredictTheWinner testMethod=test_edge_case_two_elements>\n\n    def test_edge_case_two_elements(self):\n        self.assertTrue(predict_the_winner([1, 1]))\n>       self.assertFalse(predict_the_winner([1, 2]))\nE       AssertionError: True is not false\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\predict_the_winner_run2.py:38: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\predict_the_winner_run2.py::TestPredictTheWinner::test_edge_case_two_elements\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.14s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\predict_the_winner_run3.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n______________ TestPredictTheWinner.test_edge_case_two_elements _______________\n\nself = <predict_the_winner_run3.TestPredictTheWinner testMethod=test_edge_case_two_elements>\n\n    def test_edge_case_two_elements(self):\n        self.assertTrue(predict_the_winner([5, 3]))\n>       self.assertFalse(predict_the_winner([3, 5]))\nE       AssertionError: True is not false\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\predict_the_winner_run3.py:38: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\predict_the_winner_run3.py::TestPredictTheWinner::test_edge_case_two_elements\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\search_a_2D_matrix_run1.py",
+        "passed": true,
+        "output": "..........                                                               [100%]\n10 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\search_a_2D_matrix_run2.py",
+        "passed": true,
+        "output": "..........                                                               [100%]\n10 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\search_a_2D_matrix_run3.py",
+        "passed": true,
+        "output": "......                                                                   [100%]\n6 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\word_break_run1.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________________ TestWordBreak.test_empty_string _______________________\n\nself = <word_break_run1.TestWordBreak testMethod=test_empty_string>\n\n    def test_empty_string(self):\n>       self.assertTrue(word_break(\"\", [\"a\", \"b\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\word_break_run1.py:31: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\word_break_run1.py::TestWordBreak::test_empty_string\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\word_break_run2.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________________ TestWordBreak.test_empty_string _______________________\n\nself = <word_break_run2.TestWordBreak testMethod=test_empty_string>\n\n    def test_empty_string(self):\n>       self.assertTrue(word_break(\"\", [\"a\", \"b\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\word_break_run2.py:31: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\word_break_run2.py::TestWordBreak::test_empty_string\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\cot\\word_break_run3.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________________ TestWordBreak.test_empty_string _______________________\n\nself = <word_break_run3.TestWordBreak testMethod=test_empty_string>\n\n    def test_empty_string(self):\n>       self.assertTrue(word_break(\"\", [\"a\", \"b\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\cot\\word_break_run3.py:31: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\cot\\word_break_run3.py::TestWordBreak::test_empty_string\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      }
+    ]
+  },
+  "few_shot": {
+    "total": 30,
+    "passed": 20,
+    "failed": 10,
+    "files": [
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\candy_distribution_run1.py",
+        "passed": true,
+        "output": ".....                                                                    [100%]\n5 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\candy_distribution_run2.py",
+        "passed": true,
+        "output": ".....                                                                    [100%]\n5 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\candy_distribution_run3.py",
+        "passed": true,
+        "output": ".....                                                                    [100%]\n5 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\dota2_senate_run1.py",
+        "passed": false,
+        "output": "Command '['pytest', 'D:\\\\Research\\\\SQA\\\\generated_tests\\\\llama-3.3-70b-versatile\\\\few_shot\\\\dota2_senate_run1.py', '--maxfail=1', '--disable-warnings', '-q']' timed out after 20 seconds"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\dota2_senate_run2.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\dota2_senate_run3.py",
+        "passed": false,
+        "output": "Command '['pytest', 'D:\\\\Research\\\\SQA\\\\generated_tests\\\\llama-3.3-70b-versatile\\\\few_shot\\\\dota2_senate_run3.py', '--maxfail=1', '--disable-warnings', '-q']' timed out after 20 seconds"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\frog_jump_run1.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\frog_jump_run2.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.05s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\frog_jump_run3.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\letter_combination_of_phone_numbers_run1.py",
+        "passed": true,
+        "output": ".....                                                                    [100%]\n5 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\letter_combination_of_phone_numbers_run2.py",
+        "passed": true,
+        "output": "....                                                                     [100%]\n4 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\letter_combination_of_phone_numbers_run3.py",
+        "passed": true,
+        "output": "......                                                                   [100%]\n6 passed in 0.05s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\longest_palindrome_subsequence_run1.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n_________________ TestLongestPalindromeSubseq.test_symmetric __________________\n\nself = <longest_palindrome_subsequence_run1.TestLongestPalindromeSubseq testMethod=test_symmetric>\n\n    def test_symmetric(self):\n        self.assertEqual(longest_palindrome_subseq(\"abcba\"), 5)\n>       self.assertEqual(longest_palindrome_subseq(\"abccba\"), 7)\nE       AssertionError: 6 != 7\n\n..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\longest_palindrome_subsequence_run1.py:31: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\longest_palindrome_subsequence_run1.py::TestLongestPalindromeSubseq::test_symmetric\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.16s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\longest_palindrome_subsequence_run2.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n_________________ TestLongestPalindromeSubseq.test_symmetric __________________\n\nself = <longest_palindrome_subsequence_run2.TestLongestPalindromeSubseq testMethod=test_symmetric>\n\n    def test_symmetric(self):\n        self.assertEqual(longest_palindrome_subseq(\"abcba\"), 5)\n>       self.assertEqual(longest_palindrome_subseq(\"abccba\"), 7)\nE       AssertionError: 6 != 7\n\n..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\longest_palindrome_subsequence_run2.py:31: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\longest_palindrome_subsequence_run2.py::TestLongestPalindromeSubseq::test_symmetric\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.16s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\longest_palindrome_subsequence_run3.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.05s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\partition_list_run1.py",
+        "passed": true,
+        "output": "....                                                                     [100%]\n4 passed in 0.05s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\partition_list_run2.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\partition_list_run3.py",
+        "passed": true,
+        "output": "..                                                                       [100%]\n2 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\pascal_triangle_run1.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\pascal_triangle_run2.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\pascal_triangle_run3.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\predict_the_winner_run1.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________________ TestPredictTheWinner.test_basic _______________________\n\nself = <predict_the_winner_run1.TestPredictTheWinner testMethod=test_basic>\n\n    def test_basic(self):\n>       self.assertTrue(predict_the_winner([1, 5, 2]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\predict_the_winner_run1.py:25: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\predict_the_winner_run1.py::TestPredictTheWinner::test_basic\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\predict_the_winner_run2.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________________ TestPredictTheWinner.test_basic _______________________\n\nself = <predict_the_winner_run2.TestPredictTheWinner testMethod=test_basic>\n\n    def test_basic(self):\n>       self.assertTrue(predict_the_winner([1, 5, 2]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\predict_the_winner_run2.py:25: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\predict_the_winner_run2.py::TestPredictTheWinner::test_basic\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\predict_the_winner_run3.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________________ TestPredictTheWinner.test_basic _______________________\n\nself = <predict_the_winner_run3.TestPredictTheWinner testMethod=test_basic>\n\n    def test_basic(self):\n>       self.assertTrue(predict_the_winner([1, 5, 2]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\predict_the_winner_run3.py:25: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\predict_the_winner_run3.py::TestPredictTheWinner::test_basic\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\search_a_2D_matrix_run1.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.03s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\search_a_2D_matrix_run2.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\search_a_2D_matrix_run3.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\word_break_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n___________________________ TestWordBreak.test_edge ___________________________\n\nself = <word_break_run1.TestWordBreak testMethod=test_edge>\n\n    def test_edge(self):\n        self.assertFalse(word_break(\"catsandog\", [\"cats\", \"dog\", \"sand\", \"and\", \"cat\"]))\n>       self.assertTrue(word_break(\"\", [\"a\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\word_break_run1.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\word_break_run1.py::TestWordBreak::test_edge\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.14s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\word_break_run2.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n___________________________ TestWordBreak.test_edge ___________________________\n\nself = <word_break_run2.TestWordBreak testMethod=test_edge>\n\n    def test_edge(self):\n        self.assertFalse(word_break(\"catsandog\", [\"cats\", \"dog\", \"sand\", \"and\", \"cat\"]))\n>       self.assertTrue(word_break(\"\", [\"a\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\word_break_run2.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\word_break_run2.py::TestWordBreak::test_edge\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.22s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\word_break_run3.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n___________________________ TestWordBreak.test_edge ___________________________\n\nself = <word_break_run3.TestWordBreak testMethod=test_edge>\n\n    def test_edge(self):\n        self.assertFalse(word_break(\"catsandog\", [\"cats\", \"dog\", \"sand\", \"and\", \"cat\"]))\n>       self.assertTrue(word_break(\"\", [\"a\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\word_break_run3.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\few_shot\\word_break_run3.py::TestWordBreak::test_edge\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.16s\n"
+      }
+    ]
+  },
+  "structured": {
+    "total": 30,
+    "passed": 6,
+    "failed": 24,
+    "files": [
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\candy_distribution_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n__________________ TestCandyDistribution.test_invalid_inputs __________________\n\nself = <candy_distribution_run1.TestCandyDistribution testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\candy_distribution_run1.py:38: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\candy_distribution_run1.py::TestCandyDistribution::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.16s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\candy_distribution_run2.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n__________________ TestCandyDistribution.test_invalid_inputs __________________\n\nself = <candy_distribution_run2.TestCandyDistribution testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\candy_distribution_run2.py:38: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\candy_distribution_run2.py::TestCandyDistribution::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.15s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\candy_distribution_run3.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n__________________ TestCandyDistribution.test_invalid_inputs __________________\n\nself = <candy_distribution_run3.TestCandyDistribution testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\candy_distribution_run3.py:38: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\candy_distribution_run3.py::TestCandyDistribution::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.14s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\dota2_senate_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_________________ TestPredictPartyVictory.test_invalid_inputs _________________\n\nself = <dota2_senate_run1.TestPredictPartyVictory testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            predict_party_victory(123)\n        with self.assertRaises(TypeError):\n            predict_party_victory(None)\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\dota2_senate_run1.py:57: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\dota2_senate_run1.py::TestPredictPartyVictory::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.14s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\dota2_senate_run2.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_________________ TestPredictPartyVictory.test_invalid_inputs _________________\n\nself = <dota2_senate_run2.TestPredictPartyVictory testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            predict_party_victory(123)\n        with self.assertRaises(TypeError):\n            predict_party_victory(None)\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\dota2_senate_run2.py:57: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\dota2_senate_run2.py::TestPredictPartyVictory::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.23s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\dota2_senate_run3.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_________________ TestPredictPartyVictory.test_invalid_inputs _________________\n\nself = <dota2_senate_run3.TestPredictPartyVictory testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            predict_party_victory(123)\n        with self.assertRaises(TypeError):\n            predict_party_victory(None)\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\dota2_senate_run3.py:57: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\dota2_senate_run3.py::TestPredictPartyVictory::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.18s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run1.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n________________________ TestCanCross.test_edge_cases _________________________\n\nself = <frog_jump_run1.TestCanCross testMethod=test_edge_cases>\n\n    def test_edge_cases(self):\n        self.assertTrue(can_cross([0]))\n>       self.assertFalse(can_cross([]))\n                         ^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run1.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nstones = []\n\n    def can_cross(stones: List[int]) -> bool:\n        n = len(stones)\n        dp = [[False] * (n + 1) for _ in range(n)]\n>       dp[0][0] = True\n        ^^^^^\nE       IndexError: list index out of range\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run1.py:7: IndexError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run1.py::TestCanCross::test_edge_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.15s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run2.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n________________________ TestCanCross.test_edge_cases _________________________\n\nself = <frog_jump_run2.TestCanCross testMethod=test_edge_cases>\n\n    def test_edge_cases(self):\n        self.assertTrue(can_cross([0]))\n>       self.assertFalse(can_cross([]))\n                         ^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run2.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nstones = []\n\n    def can_cross(stones: List[int]) -> bool:\n        n = len(stones)\n        dp = [[False] * (n + 1) for _ in range(n)]\n>       dp[0][0] = True\n        ^^^^^\nE       IndexError: list index out of range\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run2.py:7: IndexError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run2.py::TestCanCross::test_edge_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.16s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run3.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n________________________ TestCanCross.test_edge_cases _________________________\n\nself = <frog_jump_run3.TestCanCross testMethod=test_edge_cases>\n\n    def test_edge_cases(self):\n        self.assertTrue(can_cross([0]))\n>       self.assertFalse(can_cross([]))\n                         ^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run3.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nstones = []\n\n    def can_cross(stones: List[int]) -> bool:\n        n = len(stones)\n        dp = [[False] * (n + 1) for _ in range(n)]\n>       dp[0][0] = True\n        ^^^^^\nE       IndexError: list index out of range\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run3.py:7: IndexError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\frog_jump_run3.py::TestCanCross::test_edge_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.14s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\letter_combination_of_phone_numbers_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_________________ TestLetterCombinations.test_invalid_inputs __________________\n\nself = <letter_combination_of_phone_numbers_run1.TestLetterCombinations testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            letter_combinations(123)\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\letter_combination_of_phone_numbers_run1.py:41: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\letter_combination_of_phone_numbers_run1.py::TestLetterCombinations::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.17s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\letter_combination_of_phone_numbers_run2.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_________________ TestLetterCombinations.test_invalid_inputs __________________\n\nself = <letter_combination_of_phone_numbers_run2.TestLetterCombinations testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            letter_combinations(123)\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\letter_combination_of_phone_numbers_run2.py:41: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\letter_combination_of_phone_numbers_run2.py::TestLetterCombinations::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.17s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\letter_combination_of_phone_numbers_run3.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_________________ TestLetterCombinations.test_invalid_inputs __________________\n\nself = <letter_combination_of_phone_numbers_run3.TestLetterCombinations testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        with self.assertRaises(TypeError):\n            letter_combinations(123)\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\letter_combination_of_phone_numbers_run3.py:41: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\letter_combination_of_phone_numbers_run3.py::TestLetterCombinations::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.15s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\longest_palindrome_subsequence_run1.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\longest_palindrome_subsequence_run2.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\longest_palindrome_subsequence_run3.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n____________________ TestPartitionList.test_invalid_inputs ____________________\n\nself = <partition_list_run1.TestPartitionList testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        head = None\n        result = partition_list(head, 5)\n        self.assertIsNone(result)\n    \n        head = ListNode(1, ListNode(2, ListNode(3)))\n>       result = partition_list(head, None)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run1.py:61: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nhead = <partition_list_run1.ListNode object at 0x0000021B8A268230>, x = None\n\n    def partition_list(head: ListNode, x: int) -> ListNode:\n        before_head = ListNode(0)\n        after_head = ListNode(0)\n    \n        before = before_head\n        after = after_head\n    \n        current = head\n    \n        while current:\n>           if current.val < x:\n               ^^^^^^^^^^^^^^^\nE           TypeError: '<' not supported between instances of 'int' and 'NoneType'\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run1.py:17: TypeError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run1.py::TestPartitionList::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.14s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run2.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n____________________ TestPartitionList.test_invalid_inputs ____________________\n\nself = <partition_list_run2.TestPartitionList testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        head = None\n        result = partition_list(head, 5)\n        self.assertIsNone(result)\n    \n        head = ListNode(1, ListNode(2, ListNode(3)))\n>       result = partition_list(head, None)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run2.py:61: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nhead = <partition_list_run2.ListNode object at 0x000001BC408E8230>, x = None\n\n    def partition_list(head: ListNode, x: int) -> ListNode:\n        before_head = ListNode(0)\n        after_head = ListNode(0)\n    \n        before = before_head\n        after = after_head\n    \n        current = head\n    \n        while current:\n>           if current.val < x:\n               ^^^^^^^^^^^^^^^\nE           TypeError: '<' not supported between instances of 'int' and 'NoneType'\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run2.py:17: TypeError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run2.py::TestPartitionList::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run3.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n____________________ TestPartitionList.test_invalid_inputs ____________________\n\nself = <partition_list_run3.TestPartitionList testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        head = None\n        result = partition_list(head, 5)\n        self.assertIsNone(result)\n    \n        head = ListNode(1, ListNode(2, ListNode(3)))\n>       result = partition_list(head, None)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run3.py:61: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nhead = <partition_list_run3.ListNode object at 0x0000021F3F7D8230>, x = None\n\n    def partition_list(head: ListNode, x: int) -> ListNode:\n        before_head = ListNode(0)\n        after_head = ListNode(0)\n    \n        before = before_head\n        after = after_head\n    \n        current = head\n    \n        while current:\n>           if current.val < x:\n               ^^^^^^^^^^^^^^^\nE           TypeError: '<' not supported between instances of 'int' and 'NoneType'\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run3.py:17: TypeError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\partition_list_run3.py::TestPartitionList::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.14s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\pascal_triangle_run1.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\pascal_triangle_run2.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\pascal_triangle_run3.py",
+        "passed": true,
+        "output": "...                                                                      [100%]\n3 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\predict_the_winner_run1.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n____________________ TestPredictTheWinner.test_edge_cases _____________________\n\nself = <predict_the_winner_run1.TestPredictTheWinner testMethod=test_edge_cases>\n\n    def test_edge_cases(self):\n        self.assertTrue(predict_the_winner([1]))\n        self.assertTrue(predict_the_winner([5, 3]))\n>       self.assertFalse(predict_the_winner([3, 5]))\nE       AssertionError: True is not false\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\predict_the_winner_run1.py:31: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\predict_the_winner_run1.py::TestPredictTheWinner::test_edge_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\predict_the_winner_run2.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n___________________ TestPredictTheWinner.test_normal_cases ____________________\n\nself = <predict_the_winner_run2.TestPredictTheWinner testMethod=test_normal_cases>\n\n    def test_normal_cases(self):\n>       self.assertTrue(predict_the_winner([1, 5, 2]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\predict_the_winner_run2.py:25: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\predict_the_winner_run2.py::TestPredictTheWinner::test_normal_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\predict_the_winner_run3.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n___________________ TestPredictTheWinner.test_normal_cases ____________________\n\nself = <predict_the_winner_run3.TestPredictTheWinner testMethod=test_normal_cases>\n\n    def test_normal_cases(self):\n>       self.assertTrue(predict_the_winner([1, 5, 2]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\predict_the_winner_run3.py:25: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\predict_the_winner_run3.py::TestPredictTheWinner::test_normal_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.17s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n____________________ TestSearchMatrix.test_invalid_inputs _____________________\n\nself = <search_a_2D_matrix_run1.TestSearchMatrix testMethod=test_invalid_inputs>\n\n    def test_invalid_inputs(self):\n        matrix = [\n            [1, 3, 5, 7],\n            [10, 11, 16, 20],\n            [23, 30, 34, 50]\n        ]\n        self.assertFalse(search_matrix([], 3))\n        self.assertFalse(search_matrix([[]], 3))\n>       self.assertFalse(search_matrix(matrix, None))\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run1.py:56: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nmatrix = [[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50]], target = None\n\n    def search_matrix(matrix: list[list[int]], target: int) -> bool:\n        if not matrix or not matrix[0]:\n            return False\n    \n        m = len(matrix)\n        n = len(matrix[0])\n        left = 0\n        right = m * n\n    \n        while left < right:\n            mid = (left + right) // 2\n            row = mid // n\n            col = mid % n\n    \n            if matrix[row][col] == target:\n                return True\n>           elif matrix[row][col] < target:\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^\nE           TypeError: '<' not supported between instances of 'int' and 'NoneType'\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run1.py:17: TypeError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run1.py::TestSearchMatrix::test_invalid_inputs\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.15s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run2.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n_____________________ TestSearchMatrix.test_normal_cases ______________________\n\nself = <search_a_2D_matrix_run2.TestSearchMatrix testMethod=test_normal_cases>\n\n    def test_normal_cases(self):\n        matrix = [\n            [1, 3, 5, 7],\n            [10, 11, 16, 20],\n            [23, 30, 34, 50]\n        ]\n        self.assertTrue(search_matrix(matrix, 3))\n>       self.assertTrue(search_matrix(matrix, 13))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run2.py:34: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run2.py::TestSearchMatrix::test_normal_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run3.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n_____________________ TestSearchMatrix.test_normal_cases ______________________\n\nself = <search_a_2D_matrix_run3.TestSearchMatrix testMethod=test_normal_cases>\n\n    def test_normal_cases(self):\n        matrix = [\n            [1, 3, 5, 7],\n            [10, 11, 16, 20],\n            [23, 30, 34, 50]\n        ]\n        self.assertTrue(search_matrix(matrix, 3))\n>       self.assertTrue(search_matrix(matrix, 13))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run3.py:34: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\search_a_2D_matrix_run3.py::TestSearchMatrix::test_normal_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\word_break_run1.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n________________________ TestWordBreak.test_edge_cases ________________________\n\nself = <word_break_run1.TestWordBreak testMethod=test_edge_cases>\n\n    def test_edge_cases(self):\n>       self.assertTrue(word_break(\"\", [\"a\", \"b\", \"c\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\word_break_run1.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\word_break_run1.py::TestWordBreak::test_edge_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\word_break_run2.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n________________________ TestWordBreak.test_edge_cases ________________________\n\nself = <word_break_run2.TestWordBreak testMethod=test_edge_cases>\n\n    def test_edge_cases(self):\n>       self.assertTrue(word_break(\"\", [\"a\", \"b\", \"c\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\word_break_run2.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\word_break_run2.py::TestWordBreak::test_edge_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\structured\\word_break_run3.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n________________________ TestWordBreak.test_edge_cases ________________________\n\nself = <word_break_run3.TestWordBreak testMethod=test_edge_cases>\n\n    def test_edge_cases(self):\n>       self.assertTrue(word_break(\"\", [\"a\", \"b\", \"c\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\structured\\word_break_run3.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\structured\\word_break_run3.py::TestWordBreak::test_edge_cases\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.12s\n"
+      }
+    ]
+  },
+  "zero_shot": {
+    "total": 30,
+    "passed": 4,
+    "failed": 26,
+    "files": [
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\candy_distribution_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n________________ TestCandyDistribution.test_invalid_input_type ________________\n\nself = <candy_distribution_run1.TestCandyDistribution testMethod=test_invalid_input_type>\n\n    def test_invalid_input_type(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\candy_distribution_run1.py:49: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\candy_distribution_run1.py::TestCandyDistribution::test_invalid_input_type\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\candy_distribution_run2.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n________________ TestCandyDistribution.test_invalid_input_type ________________\n\nself = <candy_distribution_run2.TestCandyDistribution testMethod=test_invalid_input_type>\n\n    def test_invalid_input_type(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\candy_distribution_run2.py:49: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\candy_distribution_run2.py::TestCandyDistribution::test_invalid_input_type\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\candy_distribution_run3.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n________________ TestCandyDistribution.test_invalid_input_type ________________\n\nself = <candy_distribution_run3.TestCandyDistribution testMethod=test_invalid_input_type>\n\n    def test_invalid_input_type(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\candy_distribution_run3.py:50: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\candy_distribution_run3.py::TestCandyDistribution::test_invalid_input_type\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.14s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\dota2_senate_run1.py",
+        "passed": false,
+        "output": "Command '['pytest', 'D:\\\\Research\\\\SQA\\\\generated_tests\\\\llama-3.3-70b-versatile\\\\zero_shot\\\\dota2_senate_run1.py', '--maxfail=1', '--disable-warnings', '-q']' timed out after 20 seconds"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\dota2_senate_run2.py",
+        "passed": false,
+        "output": "Command '['pytest', 'D:\\\\Research\\\\SQA\\\\generated_tests\\\\llama-3.3-70b-versatile\\\\zero_shot\\\\dota2_senate_run2.py', '--maxfail=1', '--disable-warnings', '-q']' timed out after 20 seconds"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\dota2_senate_run3.py",
+        "passed": false,
+        "output": "Command '['pytest', 'D:\\\\Research\\\\SQA\\\\generated_tests\\\\llama-3.3-70b-versatile\\\\zero_shot\\\\dota2_senate_run3.py', '--maxfail=1', '--disable-warnings', '-q']' timed out after 20 seconds"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run1.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n______________________ TestCanCross.test_edge_case_empty ______________________\n\nself = <frog_jump_run1.TestCanCross testMethod=test_edge_case_empty>\n\n    def test_edge_case_empty(self):\n>       self.assertFalse(can_cross([]))\n                         ^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run1.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nstones = []\n\n    def can_cross(stones: List[int]) -> bool:\n        n = len(stones)\n        dp = [[False] * (n + 1) for _ in range(n)]\n>       dp[0][0] = True\n        ^^^^^\nE       IndexError: list index out of range\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run1.py:7: IndexError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run1.py::TestCanCross::test_edge_case_empty\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run2.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n______________________ TestCanCross.test_edge_case_empty ______________________\n\nself = <frog_jump_run2.TestCanCross testMethod=test_edge_case_empty>\n\n    def test_edge_case_empty(self):\n>       self.assertFalse(can_cross([]))\n                         ^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run2.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nstones = []\n\n    def can_cross(stones: List[int]) -> bool:\n        n = len(stones)\n        dp = [[False] * (n + 1) for _ in range(n)]\n>       dp[0][0] = True\n        ^^^^^\nE       IndexError: list index out of range\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run2.py:7: IndexError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run2.py::TestCanCross::test_edge_case_empty\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run3.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n______________________ TestCanCross.test_edge_case_empty ______________________\n\nself = <frog_jump_run3.TestCanCross testMethod=test_edge_case_empty>\n\n    def test_edge_case_empty(self):\n>       self.assertFalse(can_cross([]))\n                         ^^^^^^^^^^^^^\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run3.py:27: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nstones = []\n\n    def can_cross(stones: List[int]) -> bool:\n        n = len(stones)\n        dp = [[False] * (n + 1) for _ in range(n)]\n>       dp[0][0] = True\n        ^^^^^\nE       IndexError: list index out of range\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run3.py:7: IndexError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\frog_jump_run3.py::TestCanCross::test_edge_case_empty\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\letter_combination_of_phone_numbers_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n__________________ TestLetterCombinations.test_invalid_input __________________\n\nself = <letter_combination_of_phone_numbers_run1.TestLetterCombinations testMethod=test_invalid_input>\n\n    def test_invalid_input(self):\n>       with self.assertRaises(KeyError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: KeyError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\letter_combination_of_phone_numbers_run1.py:41: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\letter_combination_of_phone_numbers_run1.py::TestLetterCombinations::test_invalid_input\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\letter_combination_of_phone_numbers_run2.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n__________________ TestLetterCombinations.test_invalid_input __________________\n\nself = <letter_combination_of_phone_numbers_run2.TestLetterCombinations testMethod=test_invalid_input>\n\n    def test_invalid_input(self):\n>       with self.assertRaises(KeyError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: KeyError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\letter_combination_of_phone_numbers_run2.py:41: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\letter_combination_of_phone_numbers_run2.py::TestLetterCombinations::test_invalid_input\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\letter_combination_of_phone_numbers_run3.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n__________________ TestLetterCombinations.test_invalid_input __________________\n\nself = <letter_combination_of_phone_numbers_run3.TestLetterCombinations testMethod=test_invalid_input>\n\n    def test_invalid_input(self):\n>       with self.assertRaises(KeyError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: KeyError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\letter_combination_of_phone_numbers_run3.py:41: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\letter_combination_of_phone_numbers_run3.py::TestLetterCombinations::test_invalid_input\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\longest_palindrome_subsequence_run1.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n__________ TestLongestPalindromeSubseq.test_invalid_input_type_list ___________\n\nself = <longest_palindrome_subsequence_run1.TestLongestPalindromeSubseq testMethod=test_invalid_input_type_list>\n\n    def test_invalid_input_type_list(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\longest_palindrome_subsequence_run1.py:44: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\longest_palindrome_subsequence_run1.py::TestLongestPalindromeSubseq::test_invalid_input_type_list\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\longest_palindrome_subsequence_run2.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n__________ TestLongestPalindromeSubseq.test_invalid_input_type_list ___________\n\nself = <longest_palindrome_subsequence_run2.TestLongestPalindromeSubseq testMethod=test_invalid_input_type_list>\n\n    def test_invalid_input_type_list(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\longest_palindrome_subsequence_run2.py:44: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\longest_palindrome_subsequence_run2.py::TestLongestPalindromeSubseq::test_invalid_input_type_list\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\longest_palindrome_subsequence_run3.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n__________ TestLongestPalindromeSubseq.test_invalid_input_type_list ___________\n\nself = <longest_palindrome_subsequence_run3.TestLongestPalindromeSubseq testMethod=test_invalid_input_type_list>\n\n    def test_invalid_input_type_list(self):\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\longest_palindrome_subsequence_run3.py:44: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\longest_palindrome_subsequence_run3.py::TestLongestPalindromeSubseq::test_invalid_input_type_list\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\partition_list_run1.py",
+        "passed": true,
+        "output": ".......                                                                  [100%]\n7 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\partition_list_run2.py",
+        "passed": true,
+        "output": ".......                                                                  [100%]\n7 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\partition_list_run3.py",
+        "passed": true,
+        "output": ".......                                                                  [100%]\n7 passed in 0.04s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\pascal_triangle_run1.py",
+        "passed": false,
+        "output": ".F\n================================== FAILURES ===================================\n_______________ TestGeneratePascalsTriangle.test_negative_rows ________________\n\nself = <pascal_triangle_run1.TestGeneratePascalsTriangle testMethod=test_negative_rows>\n\n    def test_negative_rows(self):\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\pascal_triangle_run1.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\pascal_triangle_run1.py::TestGeneratePascalsTriangle::test_negative_rows\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\pascal_triangle_run2.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________ TestGeneratePascalsTriangle.test_negative_rows ________________\n\nself = <pascal_triangle_run2.TestGeneratePascalsTriangle testMethod=test_negative_rows>\n\n    def test_negative_rows(self):\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\pascal_triangle_run2.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\pascal_triangle_run2.py::TestGeneratePascalsTriangle::test_negative_rows\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\pascal_triangle_run3.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n_______________ TestGeneratePascalsTriangle.test_negative_rows ________________\n\nself = <pascal_triangle_run3.TestGeneratePascalsTriangle testMethod=test_negative_rows>\n\n    def test_negative_rows(self):\n>       with self.assertRaises(ValueError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: ValueError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\pascal_triangle_run3.py:30: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\pascal_triangle_run3.py::TestGeneratePascalsTriangle::test_negative_rows\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\predict_the_winner_run1.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n___________________ TestPredictTheWinner.test_mixed_numbers ___________________\n\nself = <predict_the_winner_run1.TestPredictTheWinner testMethod=test_mixed_numbers>\n\n    def test_mixed_numbers(self):\n>       self.assertTrue(predict_the_winner([1, -5, 2]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\predict_the_winner_run1.py:45: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\predict_the_winner_run1.py::TestPredictTheWinner::test_mixed_numbers\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\predict_the_winner_run2.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n___________________ TestPredictTheWinner.test_mixed_numbers ___________________\n\nself = <predict_the_winner_run2.TestPredictTheWinner testMethod=test_mixed_numbers>\n\n    def test_mixed_numbers(self):\n>       self.assertTrue(predict_the_winner([1, -5, 2]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\predict_the_winner_run2.py:45: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\predict_the_winner_run2.py::TestPredictTheWinner::test_mixed_numbers\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.11s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\predict_the_winner_run3.py",
+        "passed": false,
+        "output": "..F\n================================== FAILURES ===================================\n___________________ TestPredictTheWinner.test_mixed_numbers ___________________\n\nself = <predict_the_winner_run3.TestPredictTheWinner testMethod=test_mixed_numbers>\n\n    def test_mixed_numbers(self):\n>       self.assertTrue(predict_the_winner([1, -5, 2]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\predict_the_winner_run3.py:45: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\predict_the_winner_run3.py::TestPredictTheWinner::test_mixed_numbers\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 2 passed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\search_a_2D_matrix_run1.py",
+        "passed": false,
+        "output": "......F\n================================== FAILURES ===================================\n_______________ TestSearchMatrix.test_invalid_case_none_matrix ________________\n\nself = <search_a_2D_matrix_run1.TestSearchMatrix testMethod=test_invalid_case_none_matrix>\n\n    def test_invalid_case_none_matrix(self):\n        matrix = None\n        target = 5\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\search_a_2D_matrix_run1.py:71: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\search_a_2D_matrix_run1.py::TestSearchMatrix::test_invalid_case_none_matrix\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 6 passed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\search_a_2D_matrix_run2.py",
+        "passed": false,
+        "output": "......F\n================================== FAILURES ===================================\n_______________ TestSearchMatrix.test_invalid_case_none_matrix ________________\n\nself = <search_a_2D_matrix_run2.TestSearchMatrix testMethod=test_invalid_case_none_matrix>\n\n    def test_invalid_case_none_matrix(self):\n        matrix = None\n        target = 5\n>       with self.assertRaises(TypeError):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       AssertionError: TypeError not raised\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\search_a_2D_matrix_run2.py:71: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\search_a_2D_matrix_run2.py::TestSearchMatrix::test_invalid_case_none_matrix\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 6 passed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\search_a_2D_matrix_run3.py",
+        "passed": true,
+        "output": "........                                                                 [100%]\n8 passed in 0.05s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\word_break_run1.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n__________________ TestWordBreak.test_edge_case_empty_string __________________\n\nself = <word_break_run1.TestWordBreak testMethod=test_edge_case_empty_string>\n\n    def test_edge_case_empty_string(self):\n>       self.assertTrue(word_break(\"\", [\"a\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\word_break_run1.py:32: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\word_break_run1.py::TestWordBreak::test_edge_case_empty_string\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.12s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\word_break_run2.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n__________________ TestWordBreak.test_edge_case_empty_string __________________\n\nself = <word_break_run2.TestWordBreak testMethod=test_edge_case_empty_string>\n\n    def test_edge_case_empty_string(self):\n>       self.assertTrue(word_break(\"\", [\"a\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\word_break_run2.py:32: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\word_break_run2.py::TestWordBreak::test_edge_case_empty_string\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.13s\n"
+      },
+      {
+        "file": "D:\\Research\\SQA\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\word_break_run3.py",
+        "passed": false,
+        "output": "F\n================================== FAILURES ===================================\n__________________ TestWordBreak.test_edge_case_empty_string __________________\n\nself = <word_break_run3.TestWordBreak testMethod=test_edge_case_empty_string>\n\n    def test_edge_case_empty_string(self):\n>       self.assertTrue(word_break(\"\", [\"a\"]))\nE       AssertionError: False is not true\n\n..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\word_break_run3.py:32: AssertionError\n=========================== short test summary info ===========================\nFAILED ..\\generated_tests\\llama-3.3-70b-versatile\\zero_shot\\word_break_run3.py::TestWordBreak::test_edge_case_empty_string\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.13s\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+You are a professional test engineer. Study the examples below, then generate a unittest test suite for the target function.
+
+IMPORTANT RULES:
+- Do NOT include any import statement for the function under test. It will be injected automatically.
+- Do NOT redefine or copy the function body.
+- Do NOT add any if __name__ == "__main__" block.
+- Output ONLY the Python test class code, nothing else.
+
+---
+
+EXAMPLE 1:
+
+Function:
+def add(a, b):
+    return a + b
+
+Tests:
+class TestAdd(unittest.TestCase):
+    def test_positive_numbers(self):
+        result = add(2, 3)
+        self.assertEqual(result, 5)
+
+    def test_negative_numbers(self):
+        result = add(-1, -1)
+        self.assertEqual(result, -2)
+
+    def test_zero(self):
+        result = add(0, 5)
+        self.assertEqual(result, 5)
+
+---
+
+EXAMPLE 2:
+
+Function:
+def is_palindrome(s):
+    return s == s[::-1]
+
+Tests:
+class TestIsPalindrome(unittest.TestCase):
+    def test_palindrome(self):
+        result = is_palindrome("racecar")
+        self.assertTrue(result)
+
+    def test_not_palindrome(self):
+        result = is_palindrome("hello")
+        self.assertFalse(result)
+
+    def test_empty_string(self):
+        result = is_palindrome("")
+        self.assertTrue(result)
+
+---
+
+Now generate tests for this function:
+
+Function:
+<function_code_here>

@@ -1,0 +1,19 @@
+You are a professional test engineer.
+
+Before writing tests, reason step-by-step:
+1. What does this function do?
+2. What are the normal/expected inputs and outputs?
+3. What are the edge cases (empty input, zero, None, large values)?
+4. What invalid inputs could cause errors?
+5. What logical faults could a mutant introduce?
+
+Then generate a complete unittest test suite covering all of the above.
+
+IMPORTANT RULES:
+- Do NOT include any import statement for the function under test. It will be injected automatically.
+- Do NOT redefine or copy the function body.
+- Do NOT add any if __name__ == "__main__" block.
+- Output ONLY the Python test class code, nothing else. Do not include your reasoning in the output.
+
+Function:
+<function_code_here>
