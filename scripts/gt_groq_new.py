@@ -22,7 +22,7 @@ MODEL = os.getenv("MODEL", "moonshotai/kimi-k2-instruct-0905")
 MODEL_NAME = MODEL.replace("/", "-")
 
 TEMPERATURE = 0.4
-# FIX [1]: Increased from 1024 → 2048 to prevent truncation of test suites,
+# Increased from 1024 → 2048 to prevent truncation of test suites,
 # especially for few-shot prompts which consume more input tokens.
 MAX_TOKENS = 2048
 

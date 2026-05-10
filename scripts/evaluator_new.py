@@ -23,12 +23,6 @@ def run_pytest(test_file: Path, file_stem: str):
         env = os.environ.copy()
         env["PYTHONPATH"] = str(FUNCTIONS_FOLDER.parent)
 
-        # BUG FIX 1: Scope --cov to the specific function file only.
-        # Previously --cov=functions measured ALL files in functions/, so a
-        # function with 100% coverage was diluted to ~12% by 10 untested files.
-        # BUG FIX 2: Removed --maxfail=1. With maxfail=1, a single wrong
-        # assertion aborts the whole suite and marks passed=False even if
-        # 11 of 12 tests pass. Full execution is needed for honest metrics.
         cov_source = f"functions.{file_stem}"
 
         # Delete stale coverage.json before each run to prevent cache reads
@@ -64,9 +58,6 @@ def run_pytest(test_file: Path, file_stem: str):
             try:
                 cov_data = json.loads(cov_file.read_text())
 
-                # BUG FIX 3: Read per-file coverage for this function only,
-                # not totals. coverage.json["files"] has one entry per source file.
-                # Normalise backslashes so Windows paths match too.
                 files = cov_data.get("files", {})
                 per_file = None
                 for key, val in files.items():
@@ -134,7 +125,7 @@ def prepare_test(test_code: str, function_name: str, file_stem: str = None, use_
     """
     stem = file_stem if file_stem else function_name
     if use_mutant:
-        # Mutant files are named after the real function: letter_combinations_mutant.py
+        # Mutant files are named after the real function
         import_line = f"from mutants.{function_name}_mutant import {function_name}\n\n"
     else:
         # Source files are named after the stem: functions/letter_combination_of_phone_numbers.py
@@ -158,8 +149,6 @@ def ensure_init_files():
 # -------------------------------
 def compute_redundancy_rate(test_code: str) -> float:
     """
-    FIX [2]: Compute redundancy rate as per methodology.
-
     Redundancy = fraction of test methods whose bodies are duplicates of
     another test method in the same suite.
 
@@ -277,7 +266,6 @@ def evaluate_test(test_file: Path):
 # -------------------------------
 def average_runs(file_results: list) -> list:
     """
-    FIX [3]: Methodology states results are averaged across 3 runs.
     Group _run1 / _run2 / _run3 files by function name, then average
     all numeric metrics. Boolean metrics (executable, mutation_killed)
     are majority-voted.
@@ -346,7 +334,7 @@ def evaluate():
                 if res is not None:
                     raw_file_results.append(res)
 
-            # FIX [3]: Average across the 3 runs per function
+            # Average across the 3 runs per function
             averaged = average_runs(raw_file_results)
 
             num_functions = len(averaged)
@@ -354,7 +342,7 @@ def evaluate():
             # Aggregate over averaged function results
             executable_count = sum(1 for r in averaged if r["executable"])
             passed_count = sum(1 for r in averaged if r["passed"])
-            # FIX [4]: Mutation score denominator = number of unique functions,
+            # Mutation score denominator = number of unique functions,
             # NOT total files. This matches the methodology.
             killed_count = sum(1 for r in averaged if r["mutation_killed"])
 
@@ -375,11 +363,9 @@ def evaluate():
                 "passed": passed_count,
                 "failed": num_functions - passed_count,
                 "executable": executable_count,
-                # FIX [4]: mutation_killed / total_functions (not total files)
                 "mutation_killed": killed_count,
                 "avg_line_coverage": avg_line_cov,
                 "avg_branch_coverage": avg_branch_cov,
-                # FIX [2]: Redundancy rate now computed and stored
                 "avg_redundancy_rate": avg_redundancy,
                 "function_results": averaged,
             }
@@ -403,7 +389,7 @@ def evaluate():
 
             pass_rate = (passed / total * 100) if total else 0
             exec_rate = (execs / total * 100) if total else 0
-            # FIX [4]: mutation score = killed / unique functions × 100
+            # mutation score = killed / unique functions × 100
             mutation_score = (killed / total * 100) if total else 0
 
             print(f"\n   {prompt}:")
