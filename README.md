@@ -87,46 +87,67 @@ Kimi-K2*         Zero-Shot    100%    50%     80%     96.3%   92.5%
 ## 🗂️ Repository Structure
 
 ```
-├── functions/               # 10 LeetCode-style Python SUTs (Systems Under Test)
+├── functions/                          # 10 LeetCode-style Python SUTs (Systems Under Test)
+│   ├── __init__.py
 │   ├── candy_distribution.py
 │   ├── dota2_senate.py
 │   ├── frog_jump.py
-│   ├── letter_combinations.py
+│   ├── letter_combination_of_phones.py
 │   ├── longest_palindrome_subsequence.py
 │   ├── partition_list.py
 │   ├── pascal_triangle.py
 │   ├── predict_the_winner.py
-│   ├── search_2d_matrix.py
+│   ├── search_a_2D_matrix.py
 │   └── word_break.py
 │
-├── prompts/                 # Prompt templates for each strategy
-│   ├── zero_shot.txt
+├── prompts/                            # Prompt templates for each strategy
+│   ├── cot.txt
 │   ├── few_shot.txt
 │   ├── structured.txt
-│   └── chain_of_thought.txt
+│   └── zero_shot.txt
 │
-├── generated_tests/         # LLM-generated test suites (per model × strategy)
-│   ├── gpt_oss_120b/
-│   ├── llama_3_3_70b/
-│   └── kimi_k2/
+├── generated_tests/                    # LLM-generated test suites (per model)
+│   ├── llama-3.3-70b-versatile/
+│   ├── moonshotai-kimi-k2-instruct/
+│   └── openai-gpt-oss-120b/
 │
-├── mutants/                 # 1 LLM-generated mutant per function
+├── mutants/                            # 1 LLM-generated mutant per function
+│   ├── __init__.py
+│   ├── __init__mutant.py
+│   └── can_cross_mutant.py
+│   └── ...
 │
-├── evaluation/              # Evaluation pipeline scripts
-│   ├── run_tests.py         # Executability + pass rate
-│   ├── mutation_score.py    # Mutant-based fault detection
-│   ├── coverage.py          # Line + branch coverage via coverage.py
-│   └── redundancy.py        # AST-based structural deduplication
+├── results/                            # All evaluation outputs
+│   ├── Final_Test/                     # ✅ Final production run results
+│   │   ├── figures/                    # Generated plots and visualizations
+│   │   ├── results/                    # Per-function metric breakdowns
+│   │   └── results.json               # Aggregated results (main data file)
+│   ├── First_Tests/                    # 🧪 Exploratory run (not used in paper)
+│   ├── Second_Tests/                   # 🧪 Exploratory run (not used in paper)
+│   ├── Third_Tests/                    # 🧪 Exploratory run (not used in paper)
+│   ├── Fourth_Tests/                   # 🧪 Exploratory run (not used in paper)
+│   └── Fifth_Tests/                    # 🧪 Exploratory run (not used in paper)
 │
-├── results/                 # Raw results JSON + aggregated CSVs
+├── scripts/                            # All pipeline scripts
+│   ├── gt_groq_new.py                  # ✅ FINAL — Test generation via Groq API
+│   ├── evaluator_new.py                # ✅ FINAL — Full evaluation pipeline
+│   ├── gen_figures.py                  # Figure generation from results
+│   ├── statistical_analysis.py         # Friedman, Wilcoxon, Cliff's delta
+│   ├── evaluator.py                    # 🧪 Earlier evaluator draft
+│   ├── generate_tests.py               # 🧪 Earlier generation draft
+│   ├── groq_models.py                  # 🧪 Model exploration script
+│   ├── gt_deep.py                      # 🧪 DeepSeek generation experiment
+│   ├── gt_groq.py                      # 🧪 Earlier Groq generation draft
+│   ├── result_checker.py               # 🧪 Ad-hoc result inspection utility
+│   ├── run_metrics.py                  # 🧪 Standalone metrics runner draft
+│   └── temp_test.py                    # 🧪 Throwaway scratch file
 │
-├── analysis/                # Statistical analysis scripts
-│   ├── friedman_test.py
-│   ├── wilcoxon_posthoc.py
-│   └── cliffs_delta.py
-│
+├── .coverage                           # Coverage measurement artifact
+├── .gitignore
 └── README.md
 ```
+
+> **Note:** Only `gt_groq_new.py` and `evaluator_new.py` were used for the final experimental run reported in the paper. All other scripts under `scripts/` are earlier drafts or exploratory utilities kept for transparency.
 
 ---
 
@@ -135,7 +156,7 @@ Kimi-K2*         Zero-Shot    100%    50%     80%     96.3%   92.5%
 ### Prerequisites
 
 ```bash
-pip install groq coverage mutmut scipy numpy
+pip install groq coverage scipy numpy matplotlib
 ```
 
 ### Environment Variables
@@ -144,39 +165,40 @@ pip install groq coverage mutmut scipy numpy
 export GROQ_API_KEY=your_groq_api_key_here
 ```
 
-### Generate Tests
+### Step 1 — Generate Tests
+
+Uses `gt_groq_new.py` (the final generation script) to call the Groq API for all model–strategy–function combinations.
 
 ```bash
-# Generate tests for all functions using a specific strategy and model
-python evaluation/run_generation.py \
-  --model gpt-oss-120b \
-  --strategy cot \
-  --output generated_tests/gpt_oss_120b/cot/
+python scripts/gt_groq_new.py
 ```
 
-### Run Evaluation Pipeline
+Generated test suites are saved under `generated_tests/` organized by model name.
+
+### Step 2 — Run Evaluation Pipeline
+
+Uses `evaluator_new.py` (the final evaluator) to compute all five metrics: executability, pass rate, mutation score, line coverage, and branch coverage.
 
 ```bash
-# 1. Executability + Pass Rate
-python evaluation/run_tests.py --input generated_tests/ --output results/
-
-# 2. Mutation Score
-python evaluation/mutation_score.py --tests generated_tests/ --mutants mutants/
-
-# 3. Code Coverage
-python evaluation/coverage.py --tests generated_tests/ --functions functions/
-
-# 4. Redundancy Rate
-python evaluation/redundancy.py --tests generated_tests/
+python scripts/evaluator_new.py
 ```
 
-### Statistical Analysis
+Results are written to `results/Final_Test/results.json` and per-function breakdowns are saved under `results/Final_Test/results/`.
+
+### Step 3 — Generate Figures
 
 ```bash
-# Run full 3-stage statistical pipeline
-python analysis/friedman_test.py --results results/aggregated.csv
-python analysis/wilcoxon_posthoc.py --results results/aggregated.csv
-python analysis/cliffs_delta.py --results results/aggregated.csv
+python scripts/gen_figures.py
+```
+
+Plots are saved to `results/Final_Test/figures/`.
+
+### Step 4 — Statistical Analysis
+
+Runs the full 3-stage pipeline: Friedman test → Wilcoxon signed-rank with Bonferroni correction → Cliff's delta effect sizes.
+
+```bash
+python scripts/statistical_analysis.py
 ```
 
 ---
